@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Александра Кузнецова](https://up.htmlacademy.ru/adaptive/25/user/1899553).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Сигов](https://htmlacademy.ru/profile/crazer).
 
 ---
 
