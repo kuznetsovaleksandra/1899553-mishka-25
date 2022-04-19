@@ -1,0 +1,20 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 320px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+  background-image: url("/source/img/background2x1.jpg")
+}
+
+.main-container__title {
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0;
+  padding: 73px 0 120px 0;
+}
