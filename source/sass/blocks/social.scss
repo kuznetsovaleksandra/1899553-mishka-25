@@ -1,0 +1,17 @@
+.social {
+  display: flex;
+  padding: 25px 0;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__item {
+  margin: 0 20px
+}
+
+.social__link {
+  font-size: 10px;
+  color: #000000;
+  text-decoration: none;
+}

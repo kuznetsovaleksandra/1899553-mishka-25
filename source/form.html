@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html class="form" lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <title>Магазин ручных изделий "Мишка"</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body Class="form__body">
+<body Class="page__body">
   <header class="main-header">
-    <a class="main-header__logo">
-      <img class="main-header__logo-image" src="/source/img/mishka-logo-mobile.svg" width="86" height="35"
+    <a class="main-header__logo" href="index.html">
+      <img class="main-header__logo-image" src="./img/mishka-logo-mobile.svg" width="86" height="35"
         alt="Логотип магазина Мишка">
     </a>
     <nav class="main-navigation">
       <button class="main-navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
+        <svg class="main-navigation__menu" width="20" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 0H0v2h20V0ZM20 6H0v2h20V6ZM20 12H0v2h20v-2Z" fill="#231F20" />
+        </svg>
       </button>
       <div class="main-navigation__wrapper">
         <ul class="main-navigation__list site-list">
@@ -36,147 +40,176 @@
       </div>
     </nav>
   </header>
-  <main class="main-container">
-    <h1 class="main-title">Милые штуки ручной работы для дома</h1>
+  <main class="form-container">
+    <h1 class="visually-hidden">
+      Милые штуки ручной работы для дома
+    </h1>
     <section class="form-catalog">
-      <div class="form-catalog__wrapper">
+      <div class="form-catalog__inner">
         <h2 class="form-catalog__title">Вязание на заказ</h2>
-        <p class="form-catalog__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и
-          мы свяжемся с вами, чтобы уточнить детали.</p>
-        <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
-          <div class="catalog-filter__wrapper">
-            <fieldset class="catalog-filter__fieldset">
-              <legend class="catalog-filter__title">Тип</legend>
-              <ul class="catalog-filter__list">
-                <li class="catalog-filter__item">
-                  <label class="catalog-filter__radio">
-                    <input class="catalog-filter__control-input" type="radio" name="type" value="accessories" checked>
-                    <span class="catalog-filter__control-label">Аксессуар для интерьера</span>
-                  </label>
-                </li>
-                <li class="catalog-filter__item">
-                  <label class="catalog-filter__radio">
-                    <input class="catalog-filter__control-input" type="radio" name="type" value="toy">
-                    <span class="catalog-filter__control-label">Детская игрушка</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="catalog-filter__fieldset">
-              <legend class="catalog-filter__title">Цвет</legend>
-              <ul class="catalog-filter__list">
-                <li class="catalog-filter__item">
-                  <label class="catalog-filter__chekbox">
-                    <input class="catalog-filter__control-input" type="checkbox" name="Белый" checked>
-                    <span class="catalog-filter__control-label">Белый</span>
-                  </label>
-                </li>
-              </ul>
-              <ul class="catalog-filter__list">
-                <li class="catalog-filter__item">
-                  <label class="catalog-filter__chekbox">
-                    <input class="catalog-filter__control-input" type="checkbox" name="Серый" checked>
-                    <span class="catalog-filter__control-label">Серый</span>
-                  </label>
-                </li>
-              </ul>
-              <ul class="catalog-filter__list">
-                <li class="catalog-filter__item">
-                  <label class="catalog-filter__chekbox">
-                    <input class="catalog-filter__control-input" type="checkbox" name="Тиффани">
-                    <span class="catalog-filter__control-label">Тиффани</span>
-                  </label>
-                </li>
-              </ul>
-              <ul class="catalog-filter__list">
-                <li class="catalog-filter__item">
-                  <label class="catalog-filter__chekbox">
-                    <input class="catalog-filter__control-input" type="checkbox" name="Черный">
-                    <span class="catalog-filter__control-label">Черный</span>
-                  </label>
-                </li>
-              </ul>
-              <ul class="catalog-filter__list">
-                <li class="catalog-filter__item">
-                  <label class="catalog-filter__chekbox">
-                    <input class="catalog-filter__control-input" type="checkbox" name="Розовый">
-                    <span class="catalog-filter__control-label">Розовый</span>
-                  </label>
-                </li>
-              </ul>
-              <ul class="catalog-filter__list">
-                <li class="catalog-filter__item">
-                  <label class="catalog-filter__chekbox">
-                    <input class="catalog-filter__control-input" type="checkbox" name="Оранжевый">
-                    <span class="catalog-filter__control-label">Оранжевый</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="catalog-filter__fieldset">
-              <legend class="catalog-filter__title">ФИО</legend>
-              <div class="catalog-filter__name">
-                <label class="catalog-filter__name-label" for="catalog-filter__name">Имя:</label>
-                <input class="catalog-filter__name-input" type="text" id="catalog-filter__name" name="name"
-                  placeholder="Введите ваше имя*" required>
-              </div>
-              <div class="catalog-filter__surname">
-                <label class="catalog-filter__surname-label" for="catalog-filter__surname">Фамилия:</label>
-                <input class="catalog-filter__surname-input" type="text" id="catalog-filter__surname" name="surname"
-                  placeholder="Укажите фамилию*" required>
-              </div>
-              <div class="catalog-filter__patronymic">
-                <label class="catalog-filter__patronymic-label" for="catalog-filter__patronymic">Отчество:</label>
-                <input class="catalog-filter__patronymic-input" type="text" id="catalog-filter__patronymic"
-                  name="patronymic" placeholder="Отчество, если желаете">
-              </div>
-            </fieldset>
-            <fieldset class="catalog-filter__fieldset">
-              <legend class="catalog-filter__title">Тел</legend>
-              <div class="catalog-filter__phone-number">
-                <label class="visually-hidden" for="catalog-filter__phone-number"></label>
-                <input class="catalog-filter__phone-number-input" type="tel" id="catalog-filter__phone-number"
-                  name="номер телефона" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-              </div>
-            </fieldset>
-            <fieldset class="catalog-filter__fieldset">
-              <legend class="catalog-filter__title">E-mail</legend>
-              <div class="catalog-filter__email-text">
-                <label class="visually-hidden" for="catalog-filter__email-text"></label>
-                <input class="catalog-filter__email-text-input" type="email" id="catalog-filter__email-text"
-                  name="электронная почта'" placeholder="Ваш Email*">
-              </div>
-            </fieldset>
-            <fieldset class="catalog-filter__fieldset">
-              <legend class="catalog-filter__title">Доп</legend>
-              <textarea class="catalog-filter__message-text" name="message"
-                placeholder="Опишите все ваши пожелания к заказу"></textarea>
-            </fieldset>
+      </div>
+      <p class="form-catalog__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
+        свяжемся с вами, чтобы уточнить детали.</p>
+      <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
+        <div class="catalog-filter__wrapper">
+          <fieldset class="catalog-filter__fieldset">
+            <legend class="catalog-filter__title">Тип</legend>
+            <ul class="catalog-filter__list">
+              <li class="catalog-filter__item">
+                <label class="catalog-filter__radio">
+                  <input class="catalog-filter__control-input" type="radio" name="type" value="accessories" checked>
+                  <span class="catalog-filter__control-label">Аксессуар для интерьера</span>
+                </label>
+              </li>
+              <li class="catalog-filter__item">
+                <label class="catalog-filter__radio">
+                  <input class="catalog-filter__control-input" type="radio" name="type" value="toy">
+                  <span class="catalog-filter__control-label">Детская игрушка</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="catalog-filter__fieldset">
+            <legend class="catalog-filter__title">Цвет</legend>
+            <ul class="catalog-filter__list">
+              <li class="catalog-filter__item">
+                <label class="catalog-filter__chekbox">
+                  <input class="catalog-filter__control-input" type="checkbox" name="Белый" checked>
+                  <span class="catalog-filter__control-label">Белый</span>
+                </label>
+              </li>
+            </ul>
+            <ul class="catalog-filter__list">
+              <li class="catalog-filter__item">
+                <label class="catalog-filter__chekbox">
+                  <input class="catalog-filter__control-input" type="checkbox" name="Серый" checked>
+                  <span class="catalog-filter__control-label">Серый</span>
+                </label>
+              </li>
+            </ul>
+            <ul class="catalog-filter__list">
+              <li class="catalog-filter__item">
+                <label class="catalog-filter__chekbox">
+                  <input class="catalog-filter__control-input" type="checkbox" name="Тиффани">
+                  <span class="catalog-filter__control-label">Тиффани</span>
+                </label>
+              </li>
+            </ul>
+            <ul class="catalog-filter__list">
+              <li class="catalog-filter__item">
+                <label class="catalog-filter__chekbox">
+                  <input class="catalog-filter__control-input" type="checkbox" name="Черный">
+                  <span class="catalog-filter__control-label">Черный</span>
+                </label>
+              </li>
+            </ul>
+            <ul class="catalog-filter__list">
+              <li class="catalog-filter__item">
+                <label class="catalog-filter__chekbox">
+                  <input class="catalog-filter__control-input" type="checkbox" name="Розовый">
+                  <span class="catalog-filter__control-label">Розовый</span>
+                </label>
+              </li>
+            </ul>
+            <ul class="catalog-filter__list">
+              <li class="catalog-filter__item">
+                <label class="catalog-filter__chekbox">
+                  <input class="catalog-filter__control-input" type="checkbox" name="Оранжевый">
+                  <span class="catalog-filter__control-label">Оранжевый</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="catalog-filter__fieldset">
+            <legend class="catalog-filter__title">ФИО</legend>
+            <div class="catalog-filter__name">
+              <label class="catalog-filter__label" for="catalog-filter__name">Имя:</label>
+              <input class="catalog-filter__name-input" type="text" id="catalog-filter__name" name="name"
+                placeholder="Введите ваше имя*" required>
+            </div>
+            <div class="catalog-filter__surname">
+              <label class="catalog-filter__label" for="catalog-filter__surname">Фамилия:</label>
+              <input class="catalog-filter__surname-input" type="text" id="catalog-filter__surname" name="surname"
+                placeholder="Укажите фамилию*" required>
+            </div>
+            <div class="catalog-filter__patronymic">
+              <label class="catalog-filter__label" for="catalog-filter__patronymic">Отчество:</label>
+              <input class="catalog-filter__patronymic-input" type="text" id="catalog-filter__patronymic"
+                name="patronymic" placeholder="Отчество, если желаете">
+            </div>
+          </fieldset>
+          <fieldset class="catalog-filter__fieldset">
+            <legend class="catalog-filter__title">Тел</legend>
+            <div class="catalog-filter__phone-number">
+              <label class="visually-hidden" for="catalog-filter__phone-number"></label>
+              <input class="catalog-filter__phone-number-input" type="tel" id="catalog-filter__phone-number"
+                name="номер телефона" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+            </div>
+          </fieldset>
+          <fieldset class="catalog-filter__fieldset">
+            <legend class="catalog-filter__title">E-mail</legend>
+            <div class="catalog-filter__email-text">
+              <label class="visually-hidden" for="catalog-filter__email-text"></label>
+              <input class="catalog-filter__email-text-input" type="email" id="catalog-filter__email-text"
+                name="электронная почта'" placeholder="Ваш Email*">
+            </div>
+          </fieldset>
+          <fieldset class="catalog-filter__fieldset">
+            <legend class="catalog-filter__title">Доп</legend>
+            <textarea class="catalog-filter__message-text" name="message"
+              placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </fieldset>
+          <div class="catalog-filter__inner">
             <span class="catalog-filter__require">*Поля обязательны для заполнения</span>
-            <button class="catalog-filter__button" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
+            <button class="catalog-filter__button button" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
           </div>
-        </form>
+        </div>
+      </form>
+      </div>
       </div>
     </section>
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-    <div class="main-footer__social social">
-      <ul class="social__list">
+      <ul class="main-footer__social-list social">
         <li class="social__item">
-          <a class="social__link social__link-vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          <a class="social__link" href="https://vk.com/htmlacademy">
+            <svg class="social__icon" width="28" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1 5.8c0-.8.5-1.3 1.5-1.3h4c.3 0 .5.1.5.4L8.4 8a39.7 39.7 0 0 0 2.4 3.4s.2 0 .2-.2l.1-.3V6.7c0-.3 0-.5-.2-.6l-.8-.2c-.3 0-.5-.3-.5-.6v-.1c.4-1.1 1.5-1.7 3.2-1.7h1.5c.7 0 1.3.2 1.7.5.4.3.7.8.7 1.5v5.7l.3.1c.3 0 .5-.1.7-.4A17.7 17.7 0 0 0 21 5.6l.6-.7.8-.4H26.9c.4 0 .7.2.8.5l.2.3a2.4 2.4 0 0 1 0 .6V6c0 .7-.4 1.5-.9 2.2-.5.8-1.1 1.7-2 2.6a27.6 27.6 0 0 0-1.6 2.3c0 .1 0 .3.2.5l3.9 4.6c.2.3.3.5.3.9s-.2.7-.5 1a2 2 0 0 1-1.1.3h-4.6l-.1.1c-.4 0-.8-.2-1.1-.5a241.3 241.3 0 0 1-3-3.3A38.5 38.5 0 0 0 17 19l-.1.4c-.2.6-.6 1-1.1 1h-3c-1.5 0-3-.6-4.4-1.8-1.5-1.3-2.8-3-4-5A47.5 47.5 0 0 1 1 5.8Zm16 6.6c-.4 0-.7-.1-1-.3a.9.9 0 0 1-.5-.8V5.5c0-.3 0-.6-.2-.7-.2-.2-.5-.2-1-.2h-1.5c-.7 0-1.3.1-1.7.4.8.3 1.2 1 1.2 1.7V11c0 .4-.2.8-.6 1-.3.3-.6.5-1 .5-.6 0-1-.3-1.3-.8-1.3-2-2.4-3.8-3-5.6L6 5.6H2.2v.7l.6 1.4a33 33 0 0 0 4.8 8.6c1.8 2 3.5 3.1 5.2 3.1h2.9l.1-.4v-.3l.6-2.2.3-.6c.2-.2.5-.3.7-.3.5 0 .9.3 1.3.8L21 19c.2.2.3.3.5.3h4.4c.5 0 .8-.1.8-.4l-.1-.2-3.9-4.6c-.3-.3-.4-.7-.4-1 0-.5.1-.9.4-1.3l1.3-1.6L25.8 8c.5-.7.8-1.3 1-1.9V5.6h-4.2c-.3 0-.5.2-.6.4l-.2.5c-.4 1.1-1.6 3-3.5 5.3-.4.4-.8.6-1.3.6Z"
+                fill="#231F20" />
+            </svg>
+            <span class="visually-hidden">Мы в Вконтакте</span>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link-youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+          <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+            <svg class="social__icon" width="28" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m17.9 11.3-5.3-3.5a.7.7 0 0 0-1 .5v7a.7.7 0 0 0 1 .6l5.3-3.5a.7.7 0 0 0 0-1.1Zm-5 2.8V9.6l3.4 2.2-3.4 2.3Zm12.5-8.6A2.4 2.4 0 0 0 23.9 4c-3.7-1.4-9.6-1.4-9.9-1.4-.3 0-6.2 0-10 1.4a2.4 2.4 0 0 0-1.4 1.6c-.3 1.1-.6 3-.6 6.3s.3 5.3.6 6.3a2.4 2.4 0 0 0 1.5 1.7c3.7 1.4 9.6 1.4 9.9 1.4.8 0 6.4 0 10-1.4a2.4 2.4 0 0 0 1.4-1.7c.3-1 .6-3 .6-6.3 0-3.2-.3-5.2-.6-6.3ZM24 17.8a1 1 0 0 1-.6.7C20 20 14 20 14 20c0 0-6 0-9.5-1.4a1 1 0 0 1-.6-.7c-.3-1-.6-2.8-.6-6 0-3 .3-5 .6-6a1 1 0 0 1 .6-.7C8 3.8 14 3.8 14 3.8c0 0 6 0 9.5 1.3a1 1 0 0 1 .6.8c.3 1 .6 2.8.6 6 0 3-.3 4.9-.6 6Z"
+                fill="#231F20" />
+            </svg>
+            <span class="visually-hidden">Мы в Ютубе</span></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link-telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+          <a class="social__link" href="https://t.me/htmlacademy">
+            <svg class="social__icon" width="28" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="m23.5 3.7.2.6L21 20a.7.7 0 0 1-1 .5l-8-5.3a.7.7 0 0 1 0-1l2.5-3.2-4.3 2.9h-.7l-5.2-2.6a.7.7 0 0 1 0-1.2l18.4-6.6c.2 0 .5 0 .7.2ZM6.3 10.8l3.6 1.8 7.5-5a.7.7 0 0 1 .9 1l-4.8 6 6.4 4.2 2.3-13.6-15.9 5.6Z"
+                fill="#231F20" />
+            </svg>
+            <span class="visually-hidden">Мы в Телеграме</span></a>
         </li>
       </ul>
-    </div>
-    <div class="main-footer__copyright copyright">
-      <b class="copyright__text">Разработано:</b>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <div class="main-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано:
+          <svg class="copyright__icon" width="27" height="35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"
+              fill="#63D1BB" />
+          </svg>
+        </a>
+      </div>
     </div>
   </footer>
 </body>

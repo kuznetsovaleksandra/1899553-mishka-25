@@ -1,0 +1,27 @@
+.main-navigation {
+  position: relative;
+  font-size: 17px;
+  color: #000000;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+}
+
+.main-navigation__toggle {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  z-index: 2;
+  display: block;
+  padding: 0;
+  width: 21px;
+  height: 20px;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: 0;
+}
+
+.main-navigation__menu {
+  padding: 20px 0;
+  display: block;
+}

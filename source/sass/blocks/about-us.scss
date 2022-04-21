@@ -1,0 +1,66 @@
+.about-us {
+  box-sizing: border-box;
+  width: 320px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.about-us__title {
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0;
+  padding-top: 35px;
+}
+
+.about-us__list {
+  padding: 0;
+  margin: 30px 0 0;
+  list-style: none;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.about-us__item {
+  margin: 0 0 30px;
+  padding-top: 56px;
+  position: relative;
+}
+
+.about-us__ecology {
+  position: absolute;
+  top: 0;
+  left: 6px;
+  width: 32px;
+  height: 37px;
+}
+
+.about-us__price {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.about-us__like {
+  position: absolute;
+  top: 0;
+  left: 5px;
+}
+
+.about-us__handmade {
+  position: absolute;
+  top: 0;
+  left: 2px;
+}
+
+.about-us__support {
+  position: absolute;
+  top: 0;
+  left: -5px;
+}
+
+.about-us__gift {
+  position: absolute;
+  top: 0;
+  left: 4px;
+}
