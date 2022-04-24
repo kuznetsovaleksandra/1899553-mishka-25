@@ -1,13 +1,27 @@
 .main-container {
-  display: flex;
-  flex-direction: column;
   margin: 0 auto;
-  width: 320px;
+  max-width: 1150px;
   background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 100%;
-  background-image: url("/source/img/background2x1.jpg")
+  background-size: 100%, cover;
+  background-image: url("/source/img/background-mobile.jpg");
+}
+
+@media (min-width: $tablet-width) {
+  .main-container {
+    background-position: top;
+    background-size: 100%, cover;
+    background-image: url("/source/img/background-tablet.jpg");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-container {
+    background-position: top;
+    background-size: 100%, cover;
+    background-image: url("/source/img/background-desktop.jpg");
+  }
 }
 
 .main-container__title {
@@ -16,5 +30,21 @@
   line-height: 30px;
   text-align: center;
   margin: 0;
-  padding: 73px 0 120px 0;
+  padding: 73px 30px 120px 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-container__title {
+    padding: 155px 50px 372px 50px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-container__title {
+    padding: 157px 225px 355px 225px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
