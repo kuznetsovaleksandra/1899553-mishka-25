@@ -43,14 +43,14 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
   row-gap: 32px;
 }
 
 @media (min-width: $tablet-width) {
   .about-us__list {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
     row-gap: 55px;
     column-gap: 70px;
     font-size: 20px;
