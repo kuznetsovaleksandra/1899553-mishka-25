@@ -1,16 +1,82 @@
 .reviews {
-  box-sizing: border-box;
-  min-height: 625px;
-  width: 320px;
   padding: 0 30px;
   margin: 0 auto;
 }
 
-.reviews__title {
+.reviews__wrapper {
   margin: 0;
-  padding-top: 65px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    margin-top: 80px;
+    position: relative;
+    background-image: url("/source/img/review2.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+
+  .reviews__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .reviews__pagination {
+    position: absolute;
+    margin: auto;
+    top: 77%;
+    right: 10%;
+  }
+
+  .reviews__list {
+    order: 2;
+  }
+
+  .reviews__title {
+    order: 0;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .reviews__text {
+    font-size: 17px;
+  }
+
+  .reviews__author-name {
+    font-size: 18px;
+  }
+
+  .reviews__author-nickname {
+    font-size: 18px;
+  }
+
+  .reviews__button {
+    position: absolute;
+    right: 50px;
+    top: -25px;
+    width: 175px;
+    min-height: 52px;
+  }
+}
+
+.reviews__title {
+  font-weight: 700;
   font-size: 25px;
   line-height: 30px;
+  align-items: center;
+  margin: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .reviews__item {
@@ -19,17 +85,17 @@
 
 .reviews__text {
   margin: 40px 0 0;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 30px;
   font-weight: 400;
   text-align: left;
   color: rgba(68, 68, 68, 1);
 }
 
-.reviews__author-name{
+.reviews__author-name {
   display: block;
   margin: 45px 0 0;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 20px;
   font-weight: 700;
   font-style: normal;
@@ -50,7 +116,8 @@
   flex-wrap: wrap;
 }
 
-.reviews__pagination-prev, .reviews__pagination-next {
+.reviews__pagination-prev,
+.reviews__pagination-next {
   box-sizing: border-box;
   text-decoration: none;
   border: 1px solid;
@@ -58,6 +125,22 @@
   border-color: rgba(236, 236, 236, 1);
   background-color: #ffffff;
   width: 130px;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__pagination-prev,
+  .reviews__pagination-next {
+    border: 0;
+    width: 87px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__pagination-prev,
+  .reviews__pagination-next {
+    border: 0;
+    width: 87px;
+  }
 }
 
 .reviews__button {

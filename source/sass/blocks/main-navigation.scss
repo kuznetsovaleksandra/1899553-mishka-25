@@ -1,10 +1,8 @@
 .main-navigation {
-  position: relative;
-  font-size: 17px;
-  color: #000000;
-  font-weight: 700;
-  line-height: 24px;
-  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .main-navigation__toggle {
@@ -24,4 +22,26 @@
 .main-navigation__menu {
   padding: 20px 0;
   display: block;
+}
+
+.main-navigation__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .main-navigation {
+    display: flex;
+  }
+
+  .main-navigation__toggle {
+    display: none;
+  }
+
+  .main-navigation__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
 }
