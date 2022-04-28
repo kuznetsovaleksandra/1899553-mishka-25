@@ -1,31 +1,52 @@
 .promo {
-  margin-top: 30px;
-  margin-bottom: 58px;
-  box-sizing: border-box;
-  width: 320px;
-  padding: 0 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
 }
 
-.promo__wrapper {
-  border: 1px solid #ececec;
+@media (min-width: 1150px) {
+  .promo {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.promo__icon {
+  position: absolute;
+  left: 80px;
+  top: 36px;
+}
+
+@media (min-width: 768px) {
+  .promo__screen-icon {
+    position: absolute;
+    top: 190px;
+    left: 42px;
+  }
 }
 
 .promo__title {
-  position: relative;
+  color: #000000;
+  font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  margin: 0 0 0 30px;
-  padding: 30px 0 0 60px;
+  text-align: left;
+  font-family: inherit;
+  margin-top: 21px;
+  margin-left: 91px;
+  margin-bottom: 26px;
+}
 
-  &::after {
-    position: absolute;
-    content: " ";
-    left: 0;
-    top: 38px;
-    width: 30px;
-    height: 30px;
-    background: url(".../img/camera.svg");
-    background-repeat: no-repeat;
+@media (min-width: 768px) {
+  .promo__title {
+    font-size: 20px;
+    grid-row: 2/3;
+  }
+}
+
+@media (min-width: 1150px) {
+  .promo__title {
+    grid-column: 2/3;
+    grid-row: 1/2;
   }
 }
 
@@ -37,32 +58,42 @@
   cursor: pointer;
 }
 
-.promo__screen-image {
-  display: block;
-}
-
-.promo__screen-icon {
-  position: absolute;
-  left: 80px;
-  top: 36px;
-  width: 101px;
-  height: 77px;
-}
-
 .promo__description {
+  font-weight: 400;
   font-size: 13px;
   line-height: 24px;
-  font-weight: 400;
-  margin: 0 0 0 30px;
-  padding: 35px 0 0;
+  color: rgba(68, 68, 68, 1);
+}
+
+@media (min-width: 768px) {
+  .promo__description {
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .promo__description {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
 }
 
 .promo__form-link {
-  display: block;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 16px;
-  width: 195px;
-  box-sizing: border-box;
-  margin: 25px auto 32px;
-  padding: 12px 24px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .promo__form-link {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .promo__form-link {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
 }

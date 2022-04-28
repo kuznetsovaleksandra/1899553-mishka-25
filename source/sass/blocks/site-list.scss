@@ -1,30 +1,111 @@
+.site-list {
+  max-width: 500px;
+}
+
+/*.site-list__item {
+  padding-top: 28px;
+  padding-left: 76px;
+  padding-bottom: 26px;
+}*/
+
+.site-list__item:hover {
+  opacity: 0.6;
+}
+
+.site-list__item:active {
+  opacity: 0.3;
+}
 
 .site-list__link {
+  position: relative;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   align-items: center;
   text-decoration: none;
   color: hsl(0, 0%, 0%);
+  display: inline;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: 768px) {
   .site-list {
     display: flex;
-    position: absolute;
-    min-height: 24px;
-    justify-content: flex-end;
-    left: 0;
-    bottom: -53px;
+    flex-wrap: wrap;
+    align-items: center;
+    order: 2;
+    margin: 0;
+    padding-left: 50px;
+    position: relative;
   }
 
   .site-list__link {
-    padding: 22px 35px 22px 0;
+    font-size: 15px;
+  }
+
+  .site-list__item {
+    padding: 0;
+    min-width: 150px;
+    margin-top: 20.5px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+  }
+
+  .site-list__item:nth-child(2n) {
+    margin-right: 0;
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: 1150px) {
   .site-list {
+    padding-top: 0;
     order: 0;
+  }
+
+  .site-list__item {
+    max-width: 200px;
+    margin-top: 32.5px;
+    margin-bottom: 31.5px;
+    margin-right: 0;
+  }
+
+  .site-list__item:nth-child(2n+1) {
+    margin-left: 0;
+    margin-right: 35px;
+  }
+
+  .site-list__item:nth-child(2n) {
+    margin-right: 0;
+    margin-left: 35px;
+  }
+
+  .site-list__link {
+    padding-top: 32.5px;
+    padding-bottom: 31.5px;
+  }
+
+  .site-list__item:nth-child(2n+1) .site-list__link {
+    border-right: solid 1px rgb(0, 0, 0, 0.1);
+    padding-right: 35px;
+  }
+
+  .site-list__item:nth-child(2n+1) .site-list__link::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 1px;
+    background-color: rgb(0, 0, 0, 0.1);
+    right: 0;
+    top: 0;
+  }
+
+
+  .site-list__item:nth-child(2n) .site-list__link {
+    padding-left: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-navigation--closed .site-list__item {
+    display: none;
   }
 }
