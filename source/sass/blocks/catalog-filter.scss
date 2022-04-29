@@ -62,7 +62,7 @@
   margin: 0 auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .catalog-filter__wrapper:nth-child(2n) {
     background-color: hsl(0, 0%, 95%);
   }
@@ -130,7 +130,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .catalog-filter__fieldset {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;

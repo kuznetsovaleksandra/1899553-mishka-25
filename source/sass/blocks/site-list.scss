@@ -27,7 +27,7 @@
   display: inline;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .site-list {
     display: flex;
     flex-wrap: wrap;
@@ -55,7 +55,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .site-list {
     padding-top: 0;
     order: 0;
@@ -84,7 +84,6 @@
   }
 
   .site-list__item:nth-child(2n+1) .site-list__link {
-    border-right: solid 1px rgb(0, 0, 0, 0.1);
     padding-right: 35px;
   }
 

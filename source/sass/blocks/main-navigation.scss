@@ -55,12 +55,11 @@
 
 .main-navigation__list {
   list-style: none;
-  margin: 0 auto;
   padding: 0;
   min-width: 360px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .main-navigation__toggle {
     display: none;
   }

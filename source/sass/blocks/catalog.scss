@@ -6,7 +6,7 @@
 }
 
 .catalog__inner {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #F9F9F9;
 }
 
 .catalog__wrapper {
@@ -14,17 +14,17 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  background-image: url("");
+  background-image: url("/source/img/background-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 50% -17px;
   max-width: 1150px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .catalog__wrapper {
-    background-size: 85%;
     background-position: 50% -60px;
+    background-image: url("/source/img/background-tablet.jpg");
   }
 
   .catalog__wrapper::after {
@@ -34,14 +34,14 @@
     left: 0;
     width: 100%;
     height: 24px;
-    background-image: url("");
+    background-image: url("/source/img/zigzag-fill-tab.svg");
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .catalog__wrapper {
-    background-size: 55%;
-    background-position: 50% -65px;
+    background-position: 50% 82px;
+    background-image: url("/source/img/background-desktop.jpg");
   }
 
   .catalog__wrapper::after {
@@ -50,7 +50,8 @@
     left: 0;
     width: 100%;
     height: 24px;
-    background-image: url("");
+    background-image: url("/source/img/zigzag-fill-desk.svg");
+    max-width: 1150px;
   }
 }
 
@@ -169,7 +170,7 @@
   max-width: 130px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-widt) {
   .catalog__link {
     font-size: 20px;
     line-height: 30px;
@@ -190,7 +191,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .catalog__link {
     padding: 25px 36px 34px 37px;
     font-size: 20px;
@@ -295,7 +296,7 @@
   margin-bottom: 6px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-widt) {
   .catalog__card {
     display: grid;
     grid-template-columns: minmax(292px, 293px) 1fr;
@@ -372,7 +373,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .catalog__card {
     display: grid;
     grid-template-columns: 0.3fr 1.2fr 2fr;

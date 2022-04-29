@@ -4,7 +4,7 @@
   margin: 0 auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .about-us {
     padding: 50px;
     min-width: 768px;
@@ -12,7 +12,7 @@
     padding-bottom: 90px;
   }
 }
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .about {
     padding: 0;
     padding-top: 68px;
@@ -25,7 +25,7 @@
   flex-direction: column;
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .about-us__wrapper {
     padding-left: 40px;
     padding-right: 40px;
@@ -41,7 +41,7 @@
   margin-bottom: 28px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .about-us__title {
     font-size: 43px;
     line-height: 50px;
@@ -49,7 +49,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .about-us__title {
     font-size: 53px;
     line-height: 57px;
@@ -70,7 +70,7 @@
   row-gap: 32px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .about-us__list {
     grid-template-columns: minmax(260px, 265px) minmax(320px, 325px);
     grid-template-rows: auto;
@@ -110,7 +110,7 @@
   margin-bottom: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .about-us__item:nth-child(1),
   .about-us__item:nth-child(2),
   .about-us__item:nth-child(3) {

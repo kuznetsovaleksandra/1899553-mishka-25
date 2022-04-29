@@ -4,7 +4,7 @@
   position: relative;
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .promo {
     grid-template-columns: 2fr 1fr;
   }
@@ -16,7 +16,7 @@
   top: 36px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .promo__screen-icon {
     position: absolute;
     top: 190px;
@@ -36,14 +36,14 @@
   margin-bottom: 26px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .promo__title {
     font-size: 20px;
     grid-row: 2/3;
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .promo__title {
     grid-column: 2/3;
     grid-row: 1/2;
@@ -65,14 +65,14 @@
   color: rgba(68, 68, 68, 1);
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .promo__description {
     font-size: 15px;
     line-height: 30px;
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .promo__description {
     grid-column: 2/3;
     grid-row: 2/3;
@@ -85,13 +85,13 @@
   text-transform: uppercase;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .promo__form-link {
     font-size: 17px;
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .promo__form-link {
     grid-column: 2/3;
     grid-row: 3/4;
