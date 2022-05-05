@@ -1,22 +1,31 @@
 .additional-list {
   display: none;
-  list-style: none;
 }
 
 @media (min-width: $desktop-width) {
   .additional-list {
     display: flex;
+    flex-wrap: wrap;
     font-weight: 700;
     font-size: 15px;
     line-height: 24px;
     margin: 0;
+    margin-top: 19px;
     padding: 0;
-    order: 3;
-    min-width: 500px;
+    padding-left: 50px;
+    order: 2;
+    max-width: 600px;
+  }
+
+  .additional-list__item {
+    margin-bottom: 19px;
   }
 
   .additional-list__link {
     color: hsl(0, 0%, 0%);
     text-decoration: none;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-right: 55px;
   }
 }

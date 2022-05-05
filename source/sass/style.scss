@@ -1,12 +1,13 @@
 @import "fonts.scss";
 @import "variables.scss";
 @import "./blocks/about-us.scss";
+@import "./blocks/additional-list.scss";
 @import "./blocks/button.scss";
-@import "./blocks/catalog-cards.scss";
+@import "./blocks/catalog-container.scss";
 @import "./blocks/catalog-filter.scss";
+@import "./blocks/catalog.scss";
 @import "./blocks/contacts.scss";
 @import "./blocks/copyright.scss";
-@import "./blocks/catalog.scss";
 @import "./blocks/form-catalog.scss";
 @import "./blocks/form-container.scss";
 @import "./blocks/main-container.scss";
@@ -21,4 +22,3 @@
 @import "./blocks/social.scss";
 @import "./blocks/user-list.scss";
 @import "./blocks/visually-hidden.scss";
-@import "./blocks/additional-list.scss";

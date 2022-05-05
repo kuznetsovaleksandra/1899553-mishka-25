@@ -10,22 +10,19 @@
 
 <body class="page__body">
   <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header__logo">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="./img/mishka-logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="./img/mishka-logo-tablet.svg">
-          <img class="main-header__logo-image" src="./img/mishka-logo-mobile.svg" width="86" height="35"
-            alt="Логотип магазина Мишка">
-        </picture>
-      </a>
-      <button class="main-navigation__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-        <svg class="main-navigation__menu" width="20" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M20 0H0v2h20V0Zm0 6H0v2h20V6Zm0 6H0v2h20v-2Z" fill="#231F20" />
-        </svg>
-      </button>
-      <div class="main-navigation__wrapper">
+    <div class="main-header__wrapper">
+      <nav class="main-navigation main-navigation--closed">
+        <a class="main-header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="./img/mishka-logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="./img/mishka-logo-tablet.svg">
+            <img class="main-header__logo-image" src="./img/mishka-logo-mobile.svg" width="86" height="35"
+              alt="Логотип магазина Мишка">
+          </picture>
+        </a>
+        <button class="main-navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <ul class="main-navigation__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="catalog.html">Каталог товаров</a>
@@ -64,56 +61,67 @@
             <a class="additional-list__link" href="#">Распродажа</a>
           </li>
         </ul>
-      </div>
-      <p class="main-header__delivery">Бесплатная доставка по России</p>
-    </nav>
+        <p class="main-header__delivery">Бесплатная доставка по России</p>
+      </nav>
+    </div>
   </header>
-
   <main class="main-container">
     <h1 class="visually-hidden">Главная страница магазина "MISHKA"</h1>
-    <h1 class="main-container__title">Милые штуки <br>ручной <br>работы для дома</h1>
     <section class="catalog">
-      <div class="catalog__wrapper">
-        <h2 class="visually-hidden">Каталог</h2>
-        <div class="catalog__decor">
-          <a class="catalog__link" href="#">Предметы интерьера</a>
-          <svg class="catalog__decor-icon" width="40" height="62" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g opacity=".5" fill="#149080">
-              <path
-                d="M15.2 37.7c-.3 1-.2 2.2 0 3.6.5 2.6 1.7 6 2.4 9.7h5c.7-3.6 2-7 2.5-9.7.3-1.4.3-2.7 0-3.6-.3-.9-.9-1.6-2-2.3h-6c-1.1.7-1.7 1.4-2 2.3ZM27 57.6H13.1c-1.3 0-2.3 1-2.3 2.2V62h18.3v-2.2c0-1.2-1-2.2-2.3-2.2ZM34 2.2H22.3C22.3 1 21.3 0 20 0c-1.2 0-2.2 1-2.2 2.2H6L0 27.6c.8-.5 1.6-1 2.6-1 1.4 0 2.2.8 2.9 1.4.7.6 1.2.8 1.4.8.3 0 .8-.3 1.5-.8s1.6-1.4 2.9-1.4c1.3 0 2.2.8 2.9 1.4.7.5 1.2.8 1.5.8l.6-.2.9-.6c.5-.4 1-1 2-1.2l.8-.1c1.3 0 2.2.8 3 1.4.6.5 1.1.8 1.4.8.3 0 .8-.3 1.4-.8.7-.6 1.6-1.4 3-1.4 1.3 0 2.1.8 2.8 1.4.3.3.6.5 1 .6l.5.2c.3 0 .8-.3 1.4-1 .7-.5 1.6-1.3 3-1.3.9 0 1.7.5 2.5 1L34 2.2ZM23.4 53.1h-6.8c-.7 0-1.1.5-1.1 1.1 0 .6.5 1.1 1 1.1h7c.6 0 1-.5 1-1 .1-.7-.4-1.2-1-1.2Z" />
-              <path d="m20 28.8-.5.2c-.2 0-.4.3-.6.4V33H21v-3.5l-1-.7Z" />
-            </g>
-          </svg>
+      <div class="catalog__inner">
+        <div class="catalog__wrapper">
+          <h1 class="main-container__title">Милые штуки ручной работы для дома</h1>
+          <h2 class="visually-hidden">Каталог</h2>
+          <div class="catalog__decor">
+            <a class="catalog__link" href="#">
+              <span class="catalog__link-inner">Предметы интерьера</span>
+              <svg class="catalog__decor-icon" width="40" height="62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity=".5" fill="#149080">
+                  <path
+                    d="M15.2 37.7c-.3 1-.2 2.2 0 3.6.5 2.6 1.7 6 2.4 9.7h5c.7-3.6 2-7 2.5-9.7.3-1.4.3-2.7 0-3.6-.3-.9-.9-1.6-2-2.3h-6c-1.1.7-1.7 1.4-2 2.3ZM27 57.6H13.1c-1.3 0-2.3 1-2.3 2.2V62h18.3v-2.2c0-1.2-1-2.2-2.3-2.2ZM34 2.2H22.3C22.3 1 21.3 0 20 0c-1.2 0-2.2 1-2.2 2.2H6L0 27.6c.8-.5 1.6-1 2.6-1 1.4 0 2.2.8 2.9 1.4.7.6 1.2.8 1.4.8.3 0 .8-.3 1.5-.8s1.6-1.4 2.9-1.4c1.3 0 2.2.8 2.9 1.4.7.5 1.2.8 1.5.8l.6-.2.9-.6c.5-.4 1-1 2-1.2l.8-.1c1.3 0 2.2.8 3 1.4.6.5 1.1.8 1.4.8.3 0 .8-.3 1.4-.8.7-.6 1.6-1.4 3-1.4 1.3 0 2.1.8 2.8 1.4.3.3.6.5 1 .6l.5.2c.3 0 .8-.3 1.4-1 .7-.5 1.6-1.3 3-1.3.9 0 1.7.5 2.5 1L34 2.2ZM23.4 53.1h-6.8c-.7 0-1.1.5-1.1 1.1 0 .6.5 1.1 1 1.1h7c.6 0 1-.5 1-1 .1-.7-.4-1.2-1-1.2Z" />
+                  <path d="m20 28.8-.5.2c-.2 0-.4.3-.6.4V33H21v-3.5l-1-.7Z" />
+                </g>
+              </svg>
+            </a>
+          </div>
+          <div class="catalog__toy">
+            <a class="catalog__link" href="#">
+              <span class="catalog__link-inner">Детские игрушки</span>
+              <svg class="catalog__toy-icon" width="60" height="60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity=".5"
+                  d="m0 44 27.4 16V36.5L0 20.5V44Zm51.3-31.5V15c0 1.8-3.5 3.3-7.7 3.3-4.3 0-7.7-1.5-7.7-3.3v-4.1c.3 1.7 3.6 3 7.7 3 4.3 0 7.7-1.4 7.7-3.2 0-1.8-3.5-3.4-7.7-3.4h-1l-5-2.9v3.2c0 1.8-3.5 3.3-7.7 3.3-2.7 0-5-.6-6.4-1.5l-.7-.6c-.4-.4-.6-.8-.6-1.2v-3l-4.8 2.7h-1.1C12 7.3 8.6 9 8.6 10.7c0 1.8 3.5 3.3 7.7 3.3 4.1 0 7.4-1.4 7.7-3.1V15c0 1.8-3.5 3.3-7.7 3.3-4.3 0-7.7-1.5-7.7-3.3v-2.4l-6 3.5 27.5 16.1 27.4-16-6.2-3.7ZM37.7 22.8c0 1.8-3.5 3.3-7.7 3.3-4.3 0-7.7-1.5-7.7-3.3v-4.2c.3 1.7 3.6 3.1 7.7 3.1s7.4-1.4 7.7-3v4Zm-5.1 14V60L60 44V20.7l-27.4 16ZM29.9 6.5c4.3 0 7.7-1.5 7.7-3.3 0-1.8-3.5-3.3-7.7-3.3-4.3 0-7.7 1.5-7.7 3.3 0 1.8 3.4 3.3 7.7 3.3Z"
+                  fill="#149080" />
+              </svg>
+            </a>
+          </div>
         </div>
-        <div class="catalog__toy">
-          <a class="catalog__link" href="#">Детские игрушки</a>
-          <svg class="catalog__toy-icon" width="60" height="60" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path opacity=".5"
-              d="m0 44 27.4 16V36.5L0 20.5V44Zm51.3-31.5V15c0 1.8-3.5 3.3-7.7 3.3-4.3 0-7.7-1.5-7.7-3.3v-4.1c.3 1.7 3.6 3 7.7 3 4.3 0 7.7-1.4 7.7-3.2 0-1.8-3.5-3.4-7.7-3.4h-1l-5-2.9v3.2c0 1.8-3.5 3.3-7.7 3.3-2.7 0-5-.6-6.4-1.5l-.7-.6c-.4-.4-.6-.8-.6-1.2v-3l-4.8 2.7h-1.1C12 7.3 8.6 9 8.6 10.7c0 1.8 3.5 3.3 7.7 3.3 4.1 0 7.4-1.4 7.7-3.1V15c0 1.8-3.5 3.3-7.7 3.3-4.3 0-7.7-1.5-7.7-3.3v-2.4l-6 3.5 27.5 16.1 27.4-16-6.2-3.7ZM37.7 22.8c0 1.8-3.5 3.3-7.7 3.3-4.3 0-7.7-1.5-7.7-3.3v-4.2c.3 1.7 3.6 3.1 7.7 3.1s7.4-1.4 7.7-3v4Zm-5.1 14V60L60 44V20.7l-27.4 16ZM29.9 6.5c4.3 0 7.7-1.5 7.7-3.3 0-1.8-3.5-3.3-7.7-3.3-4.3 0-7.7 1.5-7.7 3.3 0 1.8 3.4 3.3 7.7 3.3Z"
-              fill="#149080" />
-          </svg>
-        </div>
+
       </div>
-      <div class="catalog__card">
-        <h2 class="catalog__card-title">Вязаные корзинки</h2>
-        <p class="catalog__card-best">ТОВАР НЕДЕЛИ</p>
-        <p class="catalog__card-description">Экологически чистая пряжа, ручная работа. Доступны в шести
-          расцветках и трёх размерах.</p>
-        <div class="catalog__property">
-          <span class="catalog__card-property">Цвет:</span>
-          <span class="catalog__card-property">тиффани/серый</span>
-          <span class="catalog__card-property">Диаметр:</span>
-          <span class="catalog__card-property">25 см</span>
-          <span class="catalog__card-property">Высота:</span>
-          <span class="catalog__card-property">15 см</span>
+      <div class="catalog__card-inner">
+        <div class="catalog__card">
+          <h2 class="catalog__card-title">Вязаные корзинки</h2>
+          <p class="catalog__card-best">
+          <div class="catalog__card-best-inner">ТОВАР НЕДЕЛИ</div>
+          </p>
+          <p class="catalog__card-description">Экологически чистая пряжа, ручная работа. Доступны в шести
+            расцветках и трёх размерах.</p>
+          <div class="catalog__property">
+            <span class="catalog__card-property">Цвет:</span>
+            <span class="catalog__card-property">тиффани/серый</span>
+            <span class="catalog__card-property">Диаметр:</span>
+            <span class="catalog__card-property">25 см</span>
+            <span class="catalog__card-property">Высота:</span>
+            <span class="catalog__card-property">15 см</span>
+          </div>
+          <picture>
+            <source media="(min-width: 1150px)" srcset="./img/product-week-desk.jpg">
+            <source media="(min-width: 768px)" srcset="./img/product-week-tab.jpg">
+            <img class="catalog__card-image" src="./img/product-week-mob.jpg" width="260" height="315"
+              alt="Вязаные корзинки">
+          </picture>
+          <b class="catalog__card-price">Цена: 990 руб.</b>
+          <button class="catalog__card-button button">ЗАКАЗАТЬ</button>
         </div>
-        <picture>
-          <source media="(min-width: 1200px)" srcset="./img/product-week-desk.jpg">
-          <source media="(min-width: 768px)" srcset="./img/product-week-tab.jpg">
-          <img class="catalog__card-image" src="./img/product-week-mob.jpg" width="260" height="315" alt="Вязаные корзинки">
-        </picture>
-        <b class="catalog__card-price">Цена: 990 руб.</b>
-        <button class="catalog__card-button">ЗАКАЗАТЬ</button>
       </div>
     </section>
     <section class="about-us">
@@ -121,7 +129,7 @@
         <h2 class="about-us__title title">Коротко о нас:</h2>
         <ul class="about-us__list">
           <li class="about-us__item">
-            <svg class="about-us__ecology" width="33" height="38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="about-us__item-icon" width="33" height="38" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M16.5 38c9 0 16.5-7.4 16.5-16.3-9 0-16.5 7.2-16.5 16.3ZM4.7 16.7c0 2.5 2.1 4.4 4.6 4.4 1 0 1.8-.3 2.6-.8v.3c0 2.6 2 4.5 4.5 4.5 2.6 0 4.5-2 4.5-4.5v-.3c.8.5 1.7.8 2.6.8 2.6 0 4.6-2 4.6-4.4 0-1.9-1-3.4-2.6-4.1A4.4 4.4 0 0 0 28 8.5C28 5.9 26 4 23.5 4c-1 0-1.8.3-2.6.8v-.3C21 1.9 19 0 16.4 0c-2.6 0-4.5 2-4.5 4.5v.3C11 4.3 10.2 4 9.3 4 6.7 4 4.7 6 4.7 8.5c0 1.8 1 3.3 2.6 4a4.6 4.6 0 0 0-2.6 4.2ZM16.5 8a4.5 4.5 0 1 1 0 9 4.5 4.5 0 1 1 0-9ZM0 21.7C0 30.7 7.4 38 16.5 38c0-9-7.4-16.3-16.5-16.3Z"
                 fill="#63D1BB" />
@@ -129,15 +137,7 @@
             Экологически <br> чистые материалы
           </li>
           <li class="about-us__item">
-            <svg class="about-us__handmade" width="35" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M.3 14a16 16 0 0 0 0 6.2L4.5 17 .3 14ZM24.9 1.6A18 18 0 0 0 9.3 2l7.6 5.5 8-6ZM34.5 13l-4.9 3.7 5 3.7c.5-2.4.5-5 0-7.3ZM9.4 32a17.8 17.8 0 0 0 16 .2l-8.3-6L9.4 32ZM8 14.2 1.7 9.7l-.8 2 5.4 4L8 14.2ZM19 24.8l8.4 6.2.8-.6 1-.8-8.5-6.2-1.8 1.4ZM11.6 11.6 4.1 6c-.5.5-1 1.1-1.3 1.7l7 5.2 1.8-1.4ZM22.5 22.2l8.3 6c.5-.5.9-1 1.3-1.7l-7.9-5.7-1.7 1.4ZM15.2 9 7.3 3.1c-.2 0-.4.3-.6.4l-1.1 1 7.8 5.6 1.8-1.3ZM26 19.4l7.2 5.1 1-2-6.3-4.5-1.8 1.4ZM26.9 2.7.9 22.4l.8 2L28.7 4c-.5-.5-1.1-1-1.8-1.3ZM31.3 6.5c-.3-.4-.6-.8-1-1L3 26.1c.2.5.5 1 .8 1.2 0 .2.3.4.4.5L31.8 7.1l-.5-.6ZM32.9 9 5.7 29.4l1.7 1.4 26.5-20-1-2Z"
-                fill="#63D1BB" />
-            </svg>
-            Связано вручную <br> с любовью и умилением
-          </li>
-          <li class="about-us__item">
-            <svg class="about-us__price" width="47" height="27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="about-us__item-icon" width="47" height="27" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M43 0H4C1.6 0 0 1.7 0 3.9V23C0 25.3 1.7 27 4 27h39c2.3 0 4-1.7 4-3.9V4A4 4 0 0 0 43 0ZM3 24.7v-22h40.6v22H3Z"
                 fill="#63D1BB" />
@@ -147,15 +147,7 @@
             Скандинавский стиль <br> по российской цене
           </li>
           <li class="about-us__item">
-            <svg class="about-us__support" width="55" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M41 5.8a47.8 47.8 0 0 0-20.4-1.1L13.7 0H.2L6 6.1h8.5c-4.7 1.6-7 3.5-7 3.5v3.8s2.4 1.9 7 3.5H6L0 23h13.6l7-4.7a46 46 0 0 0 20.2-1c-1.2-1.8-1.9-3.7-1.9-5.9.1-2 1-3.9 2-5.6ZM44.5 6.7a7.6 7.6 0 0 0-2 4.8c0 1.6.7 3.2 2 4.8C51 14 55 11.5 55 11.5s-4-2.6-10.5-4.8Z"
-                fill="#63D1BB" />
-            </svg>
-            Поддержка отечественного <br> производителя
-          </li>
-          <li class="about-us__item">
-            <svg class="about-us__like" width="34" height="27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="about-us__item-icon" width="34" height="27" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M34 8.4C34 3.8 30 0 25 0c-3.5 0-6.5 2-8 4.7A9.1 9.1 0 0 0 9 0C4 0 0 3.8 0 8.4 0 17.3 15.1 27 17 27c2 0 17-9.6 17-18.6Z"
                 fill="#63D1BB" />
@@ -163,7 +155,23 @@
             Увеличивает лайки <br> на фотографиях
           </li>
           <li class="about-us__item">
-            <svg class="about-us__gift" width="33" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="about-us__item-icon" width="35" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M.3 14a16 16 0 0 0 0 6.2L4.5 17 .3 14ZM24.9 1.6A18 18 0 0 0 9.3 2l7.6 5.5 8-6ZM34.5 13l-4.9 3.7 5 3.7c.5-2.4.5-5 0-7.3ZM9.4 32a17.8 17.8 0 0 0 16 .2l-8.3-6L9.4 32ZM8 14.2 1.7 9.7l-.8 2 5.4 4L8 14.2ZM19 24.8l8.4 6.2.8-.6 1-.8-8.5-6.2-1.8 1.4ZM11.6 11.6 4.1 6c-.5.5-1 1.1-1.3 1.7l7 5.2 1.8-1.4ZM22.5 22.2l8.3 6c.5-.5.9-1 1.3-1.7l-7.9-5.7-1.7 1.4ZM15.2 9 7.3 3.1c-.2 0-.4.3-.6.4l-1.1 1 7.8 5.6 1.8-1.3ZM26 19.4l7.2 5.1 1-2-6.3-4.5-1.8 1.4ZM26.9 2.7.9 22.4l.8 2L28.7 4c-.5-.5-1.1-1-1.8-1.3ZM31.3 6.5c-.3-.4-.6-.8-1-1L3 26.1c.2.5.5 1 .8 1.2 0 .2.3.4.4.5L31.8 7.1l-.5-.6ZM32.9 9 5.7 29.4l1.7 1.4 26.5-20-1-2Z"
+                fill="#63D1BB" />
+            </svg>
+            Связано вручную <br> с любовью и умилением
+          </li>
+          <li class="about-us__item">
+            <svg class="about-us__item-icon" width="55" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M41 5.8a47.8 47.8 0 0 0-20.4-1.1L13.7 0H.2L6 6.1h8.5c-4.7 1.6-7 3.5-7 3.5v3.8s2.4 1.9 7 3.5H6L0 23h13.6l7-4.7a46 46 0 0 0 20.2-1c-1.2-1.8-1.9-3.7-1.9-5.9.1-2 1-3.9 2-5.6ZM44.5 6.7a7.6 7.6 0 0 0-2 4.8c0 1.6.7 3.2 2 4.8C51 14 55 11.5 55 11.5s-4-2.6-10.5-4.8Z"
+                fill="#63D1BB" />
+            </svg>
+            Поддержка отечественного <br> производителя
+          </li>
+          <li class="about-us__item">
+            <svg class="about-us__item-icon" width="33" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M3 32h12.6V18.3H3V32ZM31.4 8.7H24l1.4-.8c1.6-1 2.5-2.6 2.5-4 0-1.1-.7-2.1-1.5-2.8-.8-.7-1.9-1.1-3-1.1-1.2 0-2.4.4-3.3 1-1.5 1-2.6 2.6-3.4 4.1l-.1.2-1-1.7c-.8-1-1.6-2-2.6-2.5C12 .5 11 0 9.7 0a5 5 0 0 0-3.2 1.3C5.7 2 5 3.2 5 4.3c0 .7.2 1.5.7 2.2.6 1 1.4 1.6 2.6 2.2H1.6c-.9 0-1.6.7-1.6 1.6V16h15.5V8.7h2V16H33v-5.8c0-1-.7-1.6-1.6-1.6ZM8.9 6.4l-1.2-1-.3-1c0-.5.2-1 .7-1.5.4-.4 1-.7 1.6-.7.7 0 1.4.2 2 .7 1 .7 2 1.7 2.6 3.1l.8 2.1A15 15 0 0 1 9 6.4Zm10.6-1.6C20 4 20.7 3.4 21.4 3c.7-.5 1.4-.7 2-.7.6 0 1.1.2 1.5.5.4.3.6.7.6 1.2 0 .4-.3 1.2-1.5 2-1 .8-3.1 1.7-6.1 2.3.3-1.2.9-2.5 1.6-3.5Zm-2 27.2H30V18.3H17.5V32Z"
                 fill="#63D1BB" />
@@ -174,35 +182,37 @@
       </div>
     </section>
     <section class="reviews">
-      <h2 class="reviews__title">Отзывы</h2>
-      <div class="reviews__wrapper slider">
-        <div class="reviews__list slider__list">
-          <blockquote class="reviews__item slider__item">
-            <p class="reviews__text">
-              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
-              инстамамочек.
-              В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-              и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-            </p>
-            <cite class="reviews__author-name">Анастасия Красильникова</cite>
-            <cite class="reviews__author-nickname">@misssssiskras</cite>
-          </blockquote>
+      <div class="reviews-inner">
+        <div class="reviews__wrapper">
+          <h2 class="reviews__title">Отзывы</h2>
+          <div class="reviews__list">
+            <blockquote class="reviews__item">
+              <p class="reviews__text">
+                Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
+                инстамамочек.
+                В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+                и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+              </p>
+              <cite class="reviews__author-name">Анастасия Красильникова</cite>
+              <cite class="reviews__author-nickname">@misssssiskras</cite>
+            </blockquote>
+          </div>
+          <div class="reviews__paginationpagination">
+            <button class="pagination__prev" type="button">
+              <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" fill="black" />
+              </svg>
+              <span class="visually-hidden">Назад</span>
+            </button>
+            <button class="pagination__next" type="button">
+              <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 11H42.3L34.2 2.8L37 0L50 13L37 26L34.2 23.2L42.3 15H0V11Z" fill="black" />
+              </svg>
+              <span class="visually-hidden">Вперед</span>
+            </button>
+          </div>
+          <a class="reviews__button button">Написать</a>
         </div>
-        <div class="reviews__pagination slider__pagination">
-          <button class="reviews__pagination-prev" type="button">
-            <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" fill="black" />
-            </svg>
-            <span class="visually-hidden">Назад</span>
-          </button>
-          <button class="reviews__pagination-next" type="button">
-            <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 11H42.3L34.2 2.8L37 0L50 13L37 26L34.2 23.2L42.3 15H0V11Z" fill="black" />
-            </svg>
-            <span class="visually-hidden">Вперед</span>
-          </button>
-        </div>
-        <a class="reviews__button button">Написать</a>
       </div>
     </section>
     <section class="contacts">

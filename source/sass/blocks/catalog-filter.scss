@@ -1,7 +1,6 @@
 .catalog-filter {
-  box-sizing: border-box;
-  width: 320px;
-  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
 }
 
@@ -17,21 +16,10 @@
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
-  color: #63d1bb;
+  color: rgba(99, 209, 187, 1);
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-
-  &::after {
-    content: " ";
-    width: 50px;
-    height: 1px;
-    flex-grow: 1;
-    margin-left: 20px;
-    background-color: #63d1bb;
-  }
+  text-transform: uppercase;
 }
 
 .catalog-filter__list {
@@ -50,7 +38,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  color: hsl(0, 0%, 27%);
+  color: rgba(68, 68, 68, 1);
 }
 
 .catalog-filter__label {
@@ -72,4 +60,111 @@
   padding-left: 30px;
   padding-right: 30px;
   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-filter__wrapper:nth-child(2n) {
+    background-color: hsl(0, 0%, 95%);
+  }
+
+  .catalog-filter__fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .catalog-filter__title {
+    grid-column: 1/2;
+  }
+
+  .catalog-filter__list {
+    grid-column: 2/4;
+  }
+
+  .catalog-filter__color:nth-child(2n+1) {
+    grid-column: 3/4;
+  }
+
+  .catalog-filter__color:nth-child(2n) {
+    grid-column: 2/3;
+  }
+
+  .catalog-filter__name {
+    grid-column: 2/-1;
+  }
+
+  .catalog-filter__surname {
+    grid-column: 2/-1;
+  }
+
+  .catalog-filter__patronymic {
+    grid-column: 2/-1;
+  }
+
+  .catalog-filter__phone-number {
+    grid-column: 2/4;
+  }
+
+  .catalog-filter__email-text {
+    grid-column: 2/4;
+  }
+
+  .catalog-filter__message-text {
+    grid-column: 2/4;
+  }
+
+  .catalog-filter__inner {
+    grid-template-columns: 1fr 1fr;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .catalog-filter__require {
+    grid-column: 2/3;
+    text-align: end;
+  }
+
+  .catalog-filter__button {
+    grid-column: 1/2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-filter__fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .catalog-filter__list {
+    grid-column: 2/-1;
+  }
+
+  .catalog-filter__color:nth-child(3n+1) {
+    grid-column: 4/5;
+  }
+
+  .catalog-filter__color:nth-child(3n) {
+    grid-column: 3/4;
+  }
+
+  .catalog-filter__color:nth-child(3n+2) {
+    grid-column: 2/3;
+  }
+
+  .catalog-filter__phone-number {
+    grid-column: 2/-1;
+  }
+
+  .catalog-filter__email-text {
+    grid-column: 2/-1;
+  }
+
+  .catalog-filter__message-text {
+    grid-column: 2/-1;
+  }
+
+  .catalog-filter__inner {
+    min-width: 1050px;
+  }
 }

@@ -1,66 +1,42 @@
 .reviews {
-  padding: 0 30px;
+  position: relative;
   margin: 0 auto;
 }
 
+.reviews-inner{
+  max-width: 1050px;
+  background-image: url("/source/img/review2.jpg");
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $desktop-width) {
+  .reviews-inner{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
 .reviews__wrapper {
-  margin: 0;
+  padding-bottom: 50px;
   padding: 30px;
   display: flex;
   flex-direction: column;
 }
 
-@media (min-width: $tablet-width) {
-  .reviews {
-    margin-top: 80px;
-    position: relative;
-    background-image: url("/source/img/review2.jpg");
-    background-repeat: no-repeat;
-    background-position: left;
+@media (min-width: $desktop-width) {
+  .reviews__wrapper {
+    padding: 78px 0 174px 163px;
   }
+}
 
+@media (min-width: $tablet-width) {
   .reviews__wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-
-  .reviews__pagination {
-    position: absolute;
-    margin: auto;
-    top: 77%;
-    right: 10%;
-  }
-
-  .reviews__list {
-    order: 2;
-  }
-
-  .reviews__title {
-    order: 0;
-    font-size: 43px;
-    line-height: 50px;
-  }
-
-  .reviews__text {
-    font-size: 17px;
-  }
-
-  .reviews__author-name {
-    font-size: 18px;
-  }
-
-  .reviews__author-nickname {
-    font-size: 18px;
-  }
-
-  .reviews__button {
-    position: absolute;
-    right: 50px;
-    top: -25px;
-    width: 175px;
-    min-height: 52px;
+    padding: 83px 50px 105px 50px;
   }
 }
 
@@ -70,6 +46,15 @@
   line-height: 30px;
   align-items: center;
   margin: 0;
+  margin-bottom: 14px;
+}
+@media (min-width: $tablet-width) {
+  .reviews__title {
+    order: 0;
+    font-size: 43px;
+    line-height: 50px;
+    margin: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -149,3 +134,41 @@
   line-height: 20px;
   margin: 38px 0 51px;
 }
+
+.reviews__pagination {
+  position: absolute;
+  margin: auto;
+  top: 77%;
+  right: 10%;
+}
+
+.reviews__list {
+  order: 2;
+}
+
+.reviews__title {
+  order: 0;
+  font-size: 43px;
+  line-height: 50px;
+}
+
+.reviews__text {
+  font-size: 17px;
+}
+
+.reviews__author-name {
+  font-size: 18px;
+}
+
+.reviews__author-nickname {
+  font-size: 18px;
+}
+
+.reviews__button {
+  position: absolute;
+  right: 50px;
+  top: -25px;
+  width: 175px;
+  min-height: 52px;
+}
+
