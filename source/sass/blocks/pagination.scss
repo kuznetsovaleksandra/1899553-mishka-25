@@ -1,0 +1,16 @@
+.pagination__toggle {
+  position: relative;
+  min-width: 128px;
+  background-color: inherit;
+  border: 1px solid #ededed;
+  flex-grow: 1;
+  min-height: 52px;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .pagination__toggle {
+    border: none;
+    min-width: 85px;
+  }
+}
