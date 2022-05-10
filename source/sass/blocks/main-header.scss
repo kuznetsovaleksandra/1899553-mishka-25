@@ -126,3 +126,19 @@
     padding-top: 10px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .main-header__logo-image {
+    height: auto;
+    width: 113px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__logo-image {
+    display: block;
+    height: 74px;
+    width: 200px;
+    padding-left: 50px;
+  }
+}

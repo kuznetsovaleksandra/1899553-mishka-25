@@ -14,3 +14,11 @@
     min-width: 85px;
   }
 }
+
+.pagination__arrow:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination__arrow:hover {
+  color: rgba(0, 0, 0, 0.6);
+}

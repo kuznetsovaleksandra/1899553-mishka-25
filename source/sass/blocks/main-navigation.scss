@@ -68,3 +68,9 @@
     box-shadow: none;
   }
 }
+
+@media (min-width: $mobile-width-only) {
+  .main-navigation--nojs .main-navigation__toggle {
+    display: none;
+  }
+}
