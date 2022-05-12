@@ -246,20 +246,30 @@
 }
 
 .catalog__property {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  margin-bottom: 26px;
+}
+
+.catalog__property-inner {
+  display: flex;
+  border-bottom: solid 1px #ededed;
   padding-bottom: 12px;
-  column-gap: 16px;
+}
+
+.catalog__property-inner:not(:first-child) {
+  margin-top: 8px;
 }
 
 .catalog__card-property {
+  min-width: 97px;
+}
+
+.catalog__card-property,
+.catalog__card-property-value {
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
   color: rgba(68, 68, 68, 1);
-  padding-bottom: 18px;
   align-items: center;
-  border-bottom: solid 1px rgba(236, 236, 236, 1);
 }
 
 .catalog__card-image {

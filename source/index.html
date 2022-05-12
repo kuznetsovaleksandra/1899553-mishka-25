@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Магазин ручных изделий "Мишка"</title>
   <link href="css/style.css" rel="stylesheet">
-  <link rel="preload" href="/js/mobile-menu.js" type="script" crossorigin="anonymous">
+  <link rel="preload" href="./js/mobile-menu.js" type="script" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -101,18 +101,24 @@
       <div class="catalog__card-inner">
         <div class="catalog__card">
           <h2 class="catalog__card-title">Вязаные корзинки</h2>
-          <p class="catalog__card-best">
-          <div class="catalog__card-best-inner">ТОВАР НЕДЕЛИ</div>
-          </p>
+          <span class="catalog__card-best">
+            <div class="catalog__card-best-inner">ТОВАР НЕДЕЛИ</div>
+          </span>
           <p class="catalog__card-description">Экологически чистая пряжа, ручная работа. Доступны в шести
             расцветках и трёх размерах.</p>
           <div class="catalog__property">
-            <span class="catalog__card-property">Цвет:</span>
-            <span class="catalog__card-property">тиффани/серый</span>
-            <span class="catalog__card-property">Диаметр:</span>
-            <span class="catalog__card-property">25 см</span>
-            <span class="catalog__card-property">Высота:</span>
-            <span class="catalog__card-property">15 см</span>
+            <div class="catalog__property-inner">
+              <span class="catalog__card-property">Цвет:</span>
+              <span class="catalog__card-property-value">тиффани/серый</span>
+            </div>
+            <div class="catalog__property-inner">
+              <span class="catalog__card-property">Диаметр:</span>
+              <span class="catalog__card-property-value">25 см</span>
+            </div>
+            <div class="catalog__property-inner">
+              <span class="catalog__card-property">Высота:</span>
+              <span class="catalog__card-property">15 см</span>
+            </div>
           </div>
           <picture>
             <source media="(min-width: 1150px)" srcset="./img/product-week-desk.jpg">
@@ -121,7 +127,7 @@
               alt="Вязаные корзинки">
           </picture>
           <b class="catalog__card-price">Цена: 990 руб.</b>
-          <button class="catalog__card-button button">ЗАКАЗАТЬ</button>
+          <a class="catalog__card-button button">ЗАКАЗАТЬ</a>
         </div>
       </div>
     </section>
@@ -232,7 +238,7 @@
               e-mail:
             </span>
             <span class="contacts__email-info">
-              info@mimimishkashop.ru
+              <div>info@mimimishkashop.ru</div>
             </span>
             <span class="contacts__address">
               адрес:
@@ -245,11 +251,7 @@
           </div>
         </div>
         <div class="contacts__map">
-          <picture class="contacts__map-picture">
-            <source srcset="/source/img/map-tablet.jpg" media="(min-width: 1150px)">
-            <source srcset="/source/img/map-desktop.jpg" media="(min-width: 768px)">
-            <img src="/source/img/map-mobile.jpg" alt="Карта">
-          </picture>
+          <!--<img class="contacts__map-picture" src="/source/img/map-desktop.jpg" alt="Карта">-->
           <svg class="contacts__pin" width="67" height="100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M57.128 9.152c-13.096-12.203-34.211-12.203-47.306 0-13.096 12.202-13.096 31.944 0 44.147 0 0 23.653 21.627 23.653 46.627 0-25 23.653-46.627 23.653-46.627 13.095-12.104 13.095-31.945 0-44.147Z"
@@ -264,7 +266,7 @@
         </div>
       </div>
     </section>
-    <!--<div class="modal modal--open">
+   <!--<div class="modal" id="modalopen">
     <section class="modal__container modal-window">
       <div class="modal-window__content">
         <h2 class="modal-window__title ">Добавить в&nbsp;корзину</h2>

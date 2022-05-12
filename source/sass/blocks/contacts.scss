@@ -29,7 +29,7 @@
     padding-right: 50px;
     padding-bottom: 105px;
   }
-  
+
   .contacts__inner::after {
     top: 132px;
     left: 112px;
@@ -142,8 +142,6 @@
 .contacts__email-info {
   grid-column: 2/3;
   grid-row: 1/2;
-  display: inline;
-  border-bottom: solid 1px rgba(98, 209, 186, 1);
 }
 
 @media (min-width: $tablet-width) {
@@ -160,6 +158,11 @@
     grid-column: 2/3;
     grid-row: 2/3;
   }
+}
+
+.contacts__email-info div {
+  display: inline;
+  border-bottom: solid 1px #61d1bb;
 }
 
 .contacts__address {
@@ -209,7 +212,7 @@
   position: relative;
   z-index: 1;
   margin-bottom: 41px;
-  /*background-image: url("/source/img/map-tablet.jpg");*/
+  background-image: url("/source/img/map-desktop.jpg");
   background-position: 50%;
   background-repeat: no-repeat;
 }

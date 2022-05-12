@@ -2,6 +2,14 @@
   display: none;
 }
 
+.additional-list__item:hover {
+  opacity: 0.6;
+}
+
+.additional-list__item:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $desktop-width) {
   .additional-list {
     display: flex;
