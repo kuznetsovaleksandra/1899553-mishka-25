@@ -1,5 +1,5 @@
 .about-us {
-  max-width: 1150px;
+  min-width: 260px;
   margin: 0 auto;
 }
 
@@ -13,7 +13,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .about {
+  .about-us {
     padding: 0;
     padding-top: 68px;
     padding-bottom: 98px;
