@@ -1,6 +1,5 @@
 .about-us {
-  padding: 30px;
-  max-width: 1150px;
+  min-width: 260px;
   margin: 0 auto;
 }
 
@@ -12,8 +11,9 @@
     padding-bottom: 90px;
   }
 }
+
 @media (min-width: $desktop-width) {
-  .about {
+  .about-us {
     padding: 0;
     padding-top: 68px;
     padding-bottom: 98px;
@@ -21,6 +21,7 @@
 }
 
 .about-us__wrapper {
+  padding: 30px;
   display: flex;
   flex-direction: column;
 }

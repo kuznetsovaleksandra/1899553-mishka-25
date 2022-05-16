@@ -1,12 +1,17 @@
 .button {
-  font-family: inherit;
+  display: block;
+  height: 52px;
+  font-size: 18px;
   font-weight: 700;
-  border: 2px solid rgba(68, 68, 68, 1);
+  line-height: 20px;
+  text-transform: uppercase;
   text-decoration: none;
+  border: 2px solid rgba(68, 68, 68, 1);
   cursor: pointer;
   color: rgba(68, 68, 68, 1);
   background: hsl(0, 0%, 100%);
   text-align: center;
+  box-sizing: border-box;
 }
 
 .button:hover {
