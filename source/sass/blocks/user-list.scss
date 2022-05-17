@@ -41,6 +41,22 @@
   color: hsl(0, 0%, 0%);
 }
 
+.user-list__search-icon:active {
+  fill: rgba(98, 208, 186, 0.3);
+}
+
+.user-list__search-icon:hover {
+  fill: #62d0ba;
+}
+
+.user-list__basket-icon:active {
+  fill: rgba(98, 208, 186, 0.3);
+}
+
+.user-list__basket-icon:hover {
+  fill: #62d0ba;
+}
+
 @media (min-width: $tablet-width) {
   .user-list {
     display: flex;

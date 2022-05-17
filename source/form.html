@@ -9,9 +9,9 @@
 </head>
 
 <body Class="page__body">
-  <header class="main-header">
+  <header class="main-header main-header--color">
     <div class="main-header__wrapper">
-      <nav class="main-navigation main-navigation--closed">
+      <nav class="main-navigation main-navigation--closed main-navigation--nojs">
         <a class="main-header__logo" href="index.html">
           <picture>
             <source media="(min-width: 1150px)" srcset="./img/mishka-logo-desktop.svg">
@@ -77,72 +77,74 @@
       <p class="form-catalog__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
         свяжемся с вами, чтобы уточнить детали.</p>
       <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
-        <div class="catalog-filter__wrapper">
+        <div class="catalog-filter__wrapper catalog-filter__wrapper--radio">
           <fieldset class="catalog-filter__fieldset">
-            <legend class="catalog-filter__title">Тип</legend>
+            <div class="catalog-filter__divider">
+              <span class="catalog-filter__title">Тип</span>
+            </div>
             <ul class="catalog-filter__list">
               <li class="catalog-filter__item">
                 <label class="catalog-filter__radio">
-                  <input class="catalog-filter__control-input" type="radio" name="type" value="accessories" checked>
+                  <input class="catalog-filter__control-input visually-hidden" type="radio" name="type" value="accessories" checked>
+                  <span class="catalog-filter__control-mark"></span>
                   <span class="catalog-filter__control-label">Аксессуар для интерьера</span>
                 </label>
               </li>
               <li class="catalog-filter__item">
                 <label class="catalog-filter__radio">
-                  <input class="catalog-filter__control-input" type="radio" name="type" value="toy">
+                  <input class="catalog-filter__control-input visually-hidden" type="radio" name="type" value="toy">
+                  <span class="catalog-filter__control-mark"></span>
                   <span class="catalog-filter__control-label">Детская игрушка</span>
                 </label>
               </li>
             </ul>
           </fieldset>
         </div>
-        <div class="catalog-filter__wrapper">
+        <div class="catalog-filter__wrapper catalog-filter__wrapper--checkbox">
           <fieldset class="catalog-filter__fieldset">
-            <legend class="catalog-filter__title">Цвет</legend>
+            <div class="catalog-filter__divider">
+              <span class="catalog-filter__title">Цвет</span>
+            </div>
             <ul class="catalog-filter__list">
               <li class="catalog-filter__item">
-                <label class="catalog-filter__chekbox">
-                  <input class="catalog-filter__control-input" type="checkbox" name="Белый" checked>
+                <label class="catalog-filter__checkbox">
+                  <input class="catalog-filter__control-input visually-hidden" type="checkbox" name="Белый" checked>
+                  <span class="catalog-filter__control-mark"></span>
                   <span class="catalog-filter__control-label">Белый</span>
                 </label>
               </li>
-            </ul>
-            <ul class="catalog-filter__list catalog-filter__color">
               <li class="catalog-filter__item">
-                <label class="catalog-filter__chekbox">
-                  <input class="catalog-filter__control-input" type="checkbox" name="Серый" checked>
+                <label class="catalog-filter__checkbox">
+                  <input class="catalog-filter__control-input visually-hidden" type="checkbox" name="Серый" checked>
+                  <span class="catalog-filter__control-mark"></span>
                   <span class="catalog-filter__control-label">Серый</span>
                 </label>
               </li>
-            </ul>
-            <ul class="catalog-filter__list catalog-filter__color">
               <li class="catalog-filter__item">
-                <label class="catalog-filter__chekbox">
-                  <input class="catalog-filter__control-input" type="checkbox" name="Тиффани">
+                <label class="catalog-filter__checkbox">
+                  <input class="catalog-filter__control-input visually-hidden" type="checkbox" name="Тиффани">
+                  <span class="catalog-filter__control-mark"></span>
                   <span class="catalog-filter__control-label">Тиффани</span>
                 </label>
               </li>
-            </ul>
-            <ul class="catalog-filter__list catalog-filter__color">
               <li class="catalog-filter__item">
-                <label class="catalog-filter__chekbox">
-                  <input class="catalog-filter__control-input" type="checkbox" name="Черный">
+                <label class="catalog-filter__checkbox">
+                  <input class="catalog-filter__control-input visually-hidden" type="checkbox" name="Черный">
+                  <span class="catalog-filter__control-mark"></span>
                   <span class="catalog-filter__control-label">Черный</span>
                 </label>
               </li>
-            </ul>
-            <ul class="catalog-filter__list catalog-filter__color">
               <li class="catalog-filter__item">
-                <label class="catalog-filter__chekbox">
-                  <input class="catalog-filter__control-input" type="checkbox" name="Розовый">
+                <label class="catalog-filter__checkbox">
+                  <input class="catalog-filter__control-input visually-hidden" type="checkbox" name="Розовый">
+                  <span class="catalog-filter__control-mark"></span>
                   <span class="catalog-filter__control-label">Розовый</span>
                 </label>
               </li>
-            </ul>
-            <ul class="catalog-filter__list catalog-filter__color">
               <li class="catalog-filter__item">
-                <label class="catalog-filter__chekbox">
-                  <input class="catalog-filter__control-input" type="checkbox" name="Оранжевый">
+                <label class="catalog-filter__checkbox">
+                  <input class="catalog-filter__control-input visually-hidden" type="checkbox" name="Оранжевый">
+                  <span class="catalog-filter__control-mark"></span>
                   <span class="catalog-filter__control-label">Оранжевый</span>
                 </label>
               </li>
@@ -151,7 +153,9 @@
         </div>
         <div class="catalog-filter__wrapper">
           <fieldset class="catalog-filter__fieldset">
-            <legend class="catalog-filter__title">ФИО</legend>
+            <div class="catalog-filter__divider">
+              <span class="catalog-filter__title">ФИО</span>
+            </div>
             <div class="catalog-filter__name">
               <label class="catalog-filter__label" for="catalog-filter__name">Имя:</label>
               <input class="catalog-filter__name-input" type="text" id="catalog-filter__name" name="name"
@@ -169,40 +173,67 @@
             </div>
           </fieldset>
         </div>
-        <div class="catalog-filter__wrapper">
+        <div class="catalog-filter__wrapper catalog-filter__wrapper--data">
           <fieldset class="catalog-filter__fieldset">
-            <legend class="catalog-filter__title">Тел</legend>
+            <div class="catalog-filter__divider">
+              <span class="catalog-filter__title">Тел</span>
+            </div>
             <div class="catalog-filter__phone-number">
               <label class="visually-hidden" for="catalog-filter__phone-number"></label>
               <input class="catalog-filter__phone-number-input" type="tel" id="catalog-filter__phone-number"
                 name="номер телефона" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+              <svg class="catalog-filter__phone-icon" width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity=".2" fill="#000">
+                  <path
+                    d="M17.44 24h-1.11c-4.939-.593-8.568-2.864-11.189-5.728C2.521 15.408.403 11.753 0 6.716V5.333c.1-.888.504-1.481 1.109-2.074.605-.69 1.613-1.481 2.52-1.58.706 0 1.815.494 2.218 1.087.403.493.605 1.58.806 2.37.202.889.605 1.975.504 2.765-.201 1.186-1.814 1.68-2.217 2.568 1.612 3.655 4.133 6.42 7.56 8.198.806-.494 1.613-1.877 2.823-1.877.403 0 1.008.198 1.41.297.505.098.908.296 1.311.493.706.297 2.017.593 2.42 1.186.403.592.705 1.58.605 2.172-.303 1.284-2.42 2.667-3.63 3.062ZM12.6 1.481c5.948 0 10.888 4.741 10.888 10.667H25C25 5.432 19.456 0 12.6 0v1.481Z" />
+                  <path
+                    d="M12.6 9.185v1.58c.807 0 1.412.593 1.412 1.383h1.613c0-1.58-1.31-2.963-3.024-2.963ZM12.6 6.124c3.327 0 6.15 2.666 6.15 6.024h1.613c0-4.148-3.427-7.506-7.661-7.506v1.482H12.6Z" />
+                </g>
+              </svg>
             </div>
           </fieldset>
           <fieldset class="catalog-filter__fieldset">
-            <legend class="catalog-filter__title">E-mail</legend>
+            <div class="catalog-filter__divider">
+              <span class="catalog-filter__title">E-mail</span>
+            </div>
             <div class="catalog-filter__email-text">
               <label class="visually-hidden" for="catalog-filter__email-text"></label>
               <input class="catalog-filter__email-text-input" type="email" id="catalog-filter__email-text"
                 name="электронная почта'" placeholder="Ваш Email*">
+              <svg class="catalog-filter__email-text-icon" width="32" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity=".2"
+                  d="M28 0H4C1.8 0 0 1.8 0 4v13c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4V4c0-2.2-1.8-4-4-4ZM2 5.3l7 5.3-7 5.3V5.3ZM30 17c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2l7.8-5.9 4.4 3.3c.5.4 1.2.6 1.8.6.6 0 1.3-.2 1.8-.6l4.4-3.3L30 17Zm0-1.2-7-5.3 7-5.3v10.6Zm-12.8-2.2c-.4.3-.8.4-1.2.4-.4 0-.9-.1-1.2-.4l-4.1-3.1-.8-.6L2 4c0-1.1.9-2 2-2h24c1.1 0 2 .9 2 2l-12.8 9.6Z"
+                  fill="#000" />
+              </svg>
             </div>
           </fieldset>
         </div>
-        <div class="catalog-filter__wrapper">
+        <div class="catalog-filter__wrapper catalog-filter__wrapper--message">
           <fieldset class="catalog-filter__fieldset">
-            <legend class="catalog-filter__title">Доп</legend>
-            <textarea class="catalog-filter__message-text" name="message"
-              placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <div class="catalog-filter__divider">
+              <span class="catalog-filter__title">Доп</span>
+            </div>
+            <div class="catalog-filter__message-text-wrapper">
+              <textarea class="catalog-filter__message-text" name="message"
+                placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </div>
           </fieldset>
         </div>
-        <div class="catalog-filter__inner">
-          <span class="catalog-filter__require">*Поля обязательны для заполнения</span>
-          <button class="catalog-filter__button button" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
+        <div class="catalog-filter__inner-wrapper">
+          <div class="catalog-filter__inner">
+            <span class="catalog-filter__require">*Поля обязательны для заполнения</span>
+            <button class="catalog-filter__button button" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
+          </div>
         </div>
       </form>
     </section>
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
+      <a class="main-footer__logo">
+        <img class="main-header__logo-image" src="./img/mishka-logo-mobile.svg" width="86" height="35"
+          alt="Логотип магазина Мишка">
+      </a>
       <ul class="main-footer__social-list social">
         <li class="social__item">
           <a class="social__link" href="https://vk.com/htmlacademy">
@@ -244,6 +275,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/mobile-menu.js"></script>
 </body>
 
 </html>

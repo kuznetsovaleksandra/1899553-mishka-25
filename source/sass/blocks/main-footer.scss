@@ -33,6 +33,14 @@
   display: none;
 }
 
+.main-footer__logo:hover {
+  color: #47c2af;
+}
+
+.main-footer__logo:active {
+  color: rgba(71, 194, 175, 0.3);
+}
+
 @media (min-width: $tablet-width) {
   .main-footer__logo {
     display: block;
