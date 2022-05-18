@@ -7,6 +7,16 @@
   position: relative;
 }
 
+.main-header__logo {
+  max-height: 79px;
+  min-width: 260px;
+  text-align: center;
+  margin-top: 22px;
+  margin-bottom: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .main-header__wrapper {
   max-width: 1150px;
   margin: 0 auto;
