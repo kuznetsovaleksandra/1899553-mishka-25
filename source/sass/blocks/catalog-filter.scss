@@ -250,11 +250,11 @@
 .catalog-filter__email-text-input:hover {
   box-shadow: inset 0 -2px 0 hsl(168, 55%, 60%);
   padding-left: 10px;
-  color: hsl(168, 55%, 60%);
+  fill: rgba(98, 209, 186, 1);
 }
 
 .catalog-filter__message-text:hover {
-  border-color: hsl(168, 55%, 60%);
+  border-color: rgba(98, 209, 186, 1);
 }
 
 .catalog-filter__message-text:active {
@@ -266,7 +266,7 @@
 .catalog-filter__patronymic-input:active,
 .catalog-filter__phone-number-input:active,
 .catalog-filter__email-text-input:active {
-  color: hsl(0, 0%, 27%);
+  fill: hsl(0, 0%, 27%);
 }
 
 .catalog-filter__phone-icon,
@@ -274,7 +274,7 @@
   position: absolute;
   right: 8px;
   top: 6px;
-  color: rgb(0, 0, 0, 0.3);
+  fill: rgba(0, 0, 0, 1);
 }
 
 .catalog-filter__email-text-icon {
@@ -283,7 +283,7 @@
 
 .catalog-filter__phone-number-input:hover + .catalog-filter__phone-icon,
 .catalog-filter__email-text-input:hover + .catalog-filter__email-text-icon {
-  color: hsl(168, 55%, 60%);
+  fill: rgba(98, 209, 186, 1);
 }
 
 @media (min-width: $tablet-width) {

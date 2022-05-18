@@ -10,16 +10,14 @@
   margin: 0 20px;
 }
 
-.social__link {
-  font-size: 10px;
-  color: #000000;
-  text-decoration: none;
+.social__icon {
+  fill: rgba(35, 31, 32, 1);
 }
 
-.social__icom:active {
+.social__icon:active {
   opacity: 0.5;
 }
 
 .social__icon:hover {
-  color: #47c2af;
+  fill: rgba(70, 193, 174, 1);
 }
