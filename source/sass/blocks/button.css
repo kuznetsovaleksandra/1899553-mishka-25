@@ -1,0 +1,28 @@
+.button {
+  display: block;
+  height: 52px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #444444;
+  cursor: pointer;
+  color: #444444;
+  background: white;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.button:hover {
+  color: white;
+  background: #444444;
+}
+
+.button:active {
+  color: white;
+  background: #444444;
+  opacity: 0.3;
+}
+/*# sourceMappingURL=button.css.map */

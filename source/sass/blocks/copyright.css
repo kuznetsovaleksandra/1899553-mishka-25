@@ -1,0 +1,28 @@
+.copyright {
+  padding: 30px 39px;
+}
+
+.copyright__link {
+  position: relative;
+  font-size: 19px;
+  line-height: 18px;
+  color: #000000;
+  padding-right: 42px;
+  text-decoration: none;
+}
+
+.copyright__icon {
+  position: absolute;
+  top: -8px;
+  right: -11px;
+  fill: #63d1bb;
+}
+
+.copyright__icon:active {
+  opacity: 0.5;
+}
+
+.copyright__icon:hover {
+  fill: #46c1ae;
+}
+/*# sourceMappingURL=copyright.css.map */
