@@ -1,6 +1,5 @@
 .copyright {
   padding: 30px 39px;
-  border-top: 1px solid #e5e5e5;
 }
 
 .copyright__link {
@@ -16,4 +15,13 @@
   position: absolute;
   top: -8px;
   right: -11px;
+  fill: rgba(99, 209, 187, 1);
+}
+
+.copyright__icon:active {
+  opacity: 0.5;
+}
+
+.copyright__icon:hover {
+  fill: rgba(70, 193, 174, 1);
 }
