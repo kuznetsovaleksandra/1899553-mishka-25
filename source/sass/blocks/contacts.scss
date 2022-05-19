@@ -161,6 +161,14 @@
 }
 
 .contacts__email-info div {
+  border-bottom: solid 1px rgba(97, 209, 187, 0.1);
+}
+
+.contacts__email-info div:hover {
+  color: #47c2af;
+}
+
+.contacts__email-info div:active {
   display: inline;
   border-bottom: solid 1px #61d1bb;
 }

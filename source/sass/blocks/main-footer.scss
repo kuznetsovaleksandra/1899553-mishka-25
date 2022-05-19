@@ -33,9 +33,22 @@
   display: none;
 }
 
+.main-footer__logo-icon {
+  fill: rgba(0, 0, 0, 1);
+}
+
+.main-footer__logo-icon:hover {
+  fill: #47c2af;
+}
+
+.main-footer__logo-icon:active {
+  fill: rgba(71, 194, 175, 0.3);
+}
+
 @media (min-width: $tablet-width) {
   .main-footer__logo {
     display: block;
+    min-width: 120px;
   }
 
   .main-footer__wrapper {

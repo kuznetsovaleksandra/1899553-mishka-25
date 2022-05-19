@@ -1,5 +1,29 @@
 .form-catalog__inner {
-  background-color: hsl(0, 0%, 95%);
+  background-color: rgba(241, 241, 241, 1);
+  position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .form-catalog__inner::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 24px;
+    background-image: url("../img/zigzag-fill-tab.svg");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-catalog__inner::after {
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 24px;
+    background-image: url("../img/zigzag-fill-tab.svg");
+  }
 }
 
 .form-catalog__title {
@@ -11,6 +35,8 @@
   padding-bottom: 73px;
   text-align: center;
   max-width: 1150px;
+  position: relative;
+  z-index: 1;
 }
 
 .form-catalog__text {
@@ -20,7 +46,7 @@
   color: rgba(68, 68, 68, 1);
   max-width: 1150px;
   margin: 0 auto;
-  padding: 17px 30px 30px 30px;
+  padding: 17px 30px 38px 30px;
 }
 
 @media (min-width: $tablet-width) {
@@ -28,13 +54,13 @@
     font-size: 43px;
     line-height: 50px;
     padding-top: 101px;
-    padding-bottom: 75px;
+    padding-bottom: 85px;
   }
 
   .form-catalog__text {
     font-size: 17px;
     line-height: 30px;
-    padding: 66px 50px 63px 50px;
+    padding: 58px 50px 14px 50px;
   }
 }
 
@@ -42,14 +68,14 @@
   .form-catalog__title {
     font-size: 53px;
     line-height: 57px;
-    padding-top: 102px;
-    padding-bottom: 95px;
+    padding-top: 40px;
+    padding-bottom: 100px;
   }
 
   .form-catalog__text {
     font-size: 17px;
     line-height: 30px;
-    padding: 115px 225px 63px 225px;
+    padding: 112px 225px 12px 225px;
     max-width: 700px;
   }
 }
