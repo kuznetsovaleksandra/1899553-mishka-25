@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,kBAAkB,CAAC;EACjB,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,MAAM,EAAE,MAAM;EACd,gBAAgB,EAAE,OAAO;CAC1B",
-    "sources": [
-        "catalog-container.scss"
-    ],
-    "names": [],
-    "file": "catalog-container.css"
-}
