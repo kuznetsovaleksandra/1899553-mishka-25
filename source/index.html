@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Магазин ручных изделий "Мишка"</title>
   <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/16.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/152.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -118,13 +122,13 @@
             </div>
           </div>
           <picture>
-            <source media="(min-width: 1150px)" srcset="./img/product-week-desk.jpg">
-            <source media="(min-width: 768px)" srcset="./img/product-week-tab.jpg">
-            <img class="catalog__card-image" src="./img/product-week-mob.jpg" width="260" height="315"
+            <source media="(min-width: 1150px)" srcset="./img/product-week-desk.jpg, ./img/product-week-deskx2.jpg 2x">
+            <source media="(min-width: 768px)" srcset="./img/product-week-tab.jpg, ./img/product-week-tab2.jpg 2x">
+            <img class="catalog__card-image" src="./img/product-week-mob.jpg" srcset="./img/product-week-mobx2.jpg 2x" width="260" height="315"
               alt="Вязаные корзинки">
           </picture>
           <b class="catalog__card-price">Цена: 990 руб.</b>
-          <a class="catalog__card-button button">ЗАКАЗАТЬ</a>
+          <a class="catalog__card-button button button--modal">ЗАКАЗАТЬ</a>
         </div>
       </div>
     </section>
@@ -263,29 +267,40 @@
         </div>
       </div>
     </section>
-    <!--<div class="modal" id="modalopen">
-    <section class="modal__container modal-window">
-      <div class="modal-window__content">
-        <h2 class="modal-window__title ">Добавить в&nbsp;корзину</h2>
-        <p class="modal-window__text ">Выберите размер:</p>
-        <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="modal-window__fieldset">
-            <legend class="visually-hidden">Размеры</legend>
-            <ul class="modal-window__list">
-              <li class="modal-window__item"><label class="modal-cart__control"><input class="visually-hidden"
-                    type="radio" name="size" value="S" checked="checked"> <span
-                    class="modal-window__control-mark">S</span></label></li>
-              <li class="modal-window__item"><label class="modal-cart__control"><input class="visually-hidden"
-                    type="radio" name="size" value="M" checked="checked"> <span
-                    class="modal-window__control-mark">M</span></label></li>
-              <li class="modal-window__item"><label class="modal-cart__control"><input class="visually-hidden"
-                    type="radio" name="size" value="L" checked="checked"> <span
-                    class="modal-window__control-mark">L</span></label></li>
-            </ul>
-          </fieldset><button class="modal-window__button button" type="submit">Добавить</button>
-        </form>
+    <div class="modal modal--close">
+      <div class="modal__container modal-window">
+        <section class="modal-window__content">
+          <h2 class="modal-window__title">Добавить в&nbspкорзину</h2>
+          <p class="modal-window__text">Выберите размер:</p>
+          <form class="modal-window__form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="modal-window__fieldset">
+              <legend class="visually-hidden">Размеры</legend>
+              <ul class="modal-window__list">
+                <li class="modal-window__item">
+                  <label class="modal-window__control">
+                    <input class="visually-hidden" type="radio" name="size" value="S" checked>
+                    <span class="modal-window__control-mark">S</span>
+                  </label>
+                </li>
+                <li class="modal-window__item">
+                  <label class="modal-window__control">
+                    <input class="visually-hidden" type="radio" name="size" value="M" checked>
+                    <span class="modal-window__control-mark">M</span>
+                  </label>
+                </li>
+                <li class="modal-window__item">
+                  <label class="modal-window__control">
+                    <input class="visually-hidden" type="radio" name="size" value="L" checked>
+                    <span class="modal-window__control-mark">L</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="modal-window__button button" type="submit">Добавить</button>
+          </form>
+        </section>
       </div>
-    </section>-->
+    </div>
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
@@ -330,6 +345,7 @@
     </div>
   </footer>
   <script src="js/mobile-menu.js"></script>
+  <script src="js/modal.js"></script>
 </body>
 
 </html>
