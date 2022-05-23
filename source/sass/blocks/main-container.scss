@@ -28,18 +28,18 @@
   flex-basis: 100%;
 }
 
+@media (min-width: $tablet-width) {
+  .main-container__title {
+    padding: 104px 50px 358px 50px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .main-container__title {
     padding: 157px 225px 355px 225px;
     font-size: 53px;
     line-height: 57px;
-  }
-}
-
-@media (min-width: 768px) {
-  .main-container__title {
-    padding: 104px 50px 358px 50px;
-    font-size: 43px;
-    line-height: 50px;
   }
 }
