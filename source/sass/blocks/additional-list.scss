@@ -29,22 +29,7 @@
     margin-bottom: 19px;
   }
 
-  @media (min-width: 1150px) {
-    .additional-list__item {
-      margin-bottom: 19px;
-    }
-  }
-  
-  .additional-list__link {
-    color: hsl(0, 0%, 0%);
-    text-decoration: none;
-    padding-top: 19px;
-    padding-bottom: 19px;
-    padding-right: 55px;
-  }
-}
 
-@media (min-width: 1150px) {
   .additional-list__link {
     color: #000;
     text-decoration: none;

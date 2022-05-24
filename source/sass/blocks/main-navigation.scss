@@ -60,9 +60,13 @@
   min-width: 320px;
 }
 
-.main-navigation--nojs .site-list,
-.main-navigation--nojs .user-list {
-  position: static;
+// .main-navigation--nojs .site-list,
+// .main-navigation--nojs .user-list {
+//   position: static;
+// }
+
+.main-navigation--nojs .main-navigation__toggle {
+  display: none;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -73,6 +77,10 @@
     background-color: #ffffff;
     width: 100%;
     z-index: 10;
+  }
+
+  .main-navigation--nojs {
+    position: relative;
   }
 }
 

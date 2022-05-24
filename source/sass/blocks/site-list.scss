@@ -96,7 +96,12 @@
     display: none;
   }
 
+  .main-navigation--nojs .site-list__item {
+    display: block;
+  }
+
   .site-list {
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     width: 100%;
