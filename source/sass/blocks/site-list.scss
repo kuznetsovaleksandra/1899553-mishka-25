@@ -66,7 +66,7 @@
 
   .site-list__link {
     padding-top: 32.5px;
-    padding-bottom: 34px;
+    padding-bottom: 31.5px;
     font-size: 17px;
     line-height: 24px;
   }
@@ -96,7 +96,12 @@
     display: none;
   }
 
+  .main-navigation--nojs .site-list__item {
+    display: block;
+  }
+
   .site-list {
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     width: 100%;

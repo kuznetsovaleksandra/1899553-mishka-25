@@ -40,7 +40,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog__wrapper {
-    background-position: 50% 82px;
+    background-position: 50% -60px;
     background-image: url("../img/background-desktop.jpg");
   }
 
@@ -80,7 +80,7 @@
 
 @media (min-width: 1150px) {
   .catalog__title {
-    padding: 95px 50px 356px 50px;
+    padding: 157px 225px 355px 225px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -179,7 +179,7 @@
 
   .catalog__decor,
   .catalog__toy {
-    min-width: 334px;
+    width: 334px;
   }
 
   .catalog__decor {
@@ -200,6 +200,11 @@
 
   .catalog__toy .catalog__link {
     padding: 25px 35px 34px 36px;
+  }
+
+  .catalog__toy,
+  .catalog__decor {
+    width: 525px;
   }
 }
 
