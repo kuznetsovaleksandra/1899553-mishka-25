@@ -24,7 +24,7 @@
 @media (min-width: $desktop-width) {
   .contacts__inner {
     position: relative;
-    padding-top: 146px;
+    padding-top: 150px;
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 105px;
@@ -63,7 +63,7 @@
   .contacts__wrapper {
     display: flex;
     flex-direction: column;
-    max-width: 300px;
+    max-width: 400px;
     padding: 0;
     margin-left: 174px;
     row-gap: 0;
@@ -113,8 +113,9 @@
 @media (min-width: $desktop-width) {
   .contacts__wrapper-item {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    margin-bottom: 84px;
+    grid-template-columns: 75px 240px;
+    margin-bottom: 80px;
+    column-gap: 2px;
   }
 }
 
@@ -135,7 +136,7 @@
 @media (min-width: $desktop-width) {
   .contacts__email {
     grid-column: 1/2;
-    grid-row: 2/3;
+    grid-row: 1/2;
   }
 }
 
@@ -156,7 +157,7 @@
 @media (min-width: $desktop-width) {
   .contacts__email-info {
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 1/2;
   }
 }
 
@@ -190,7 +191,7 @@
 @media (min-width: $desktop-width) {
   .contacts__address {
     grid-column: 1/2;
-    grid-row: 3/4;
+    grid-row: 2/3;
   }
 }
 
@@ -211,7 +212,7 @@
 @media (min-width: $desktop-width) {
   .contacts__address-info {
     grid-column: 2/3;
-    grid-row: 3/4;
+    grid-row: 2/3;
   }
 }
 
@@ -269,8 +270,8 @@
   .contacts__pin {
     position: absolute;
     z-index: 1;
-    left: 50%;
-    top: 50%;
+    left: 51%;
+    top: 43%;
     transform: translate(-50%, -50%);
   }
 }

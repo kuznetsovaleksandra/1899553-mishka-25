@@ -6,14 +6,14 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 681px 1fr;
   }
 }
 
 .promo__inner {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 21px 12px 26px 34px;
   border: 1px solid #ededed;
   border-bottom: none;
@@ -21,7 +21,7 @@
 
 @media (min-width: $tablet-width) {
   .promo__inner {
-    justify-content: center;
+    justify-content: start;
     padding-top: 41px;
     padding-left: 42px;
     padding-bottom: 0;
@@ -34,9 +34,9 @@
     grid-row: 1/2;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 79px;
+    padding-left: 76px;
     padding-top: 49px;
-    padding-right: 58px;
+    padding-right: 63px;
   }
 }
 
@@ -60,12 +60,14 @@
   text-align: left;
   font-family: inherit;
   margin: 0;
+  max-width: 156px;
 }
 
 @media (min-width: $tablet-width) {
   .promo__title {
     font-size: 20px;
     grid-row: 2/3;
+    max-width: 400px;
   }
 }
 
@@ -138,7 +140,6 @@
   opacity: 0.7;
 }
 
-
 .promo__description {
   border: 1px solid #ededed;
   border-top: none;
@@ -157,9 +158,9 @@
   .promo__description {
     grid-column: 2/3;
     grid-row: 2/3;
-    padding-top: 10px;
-    padding-right: 57px;
-    padding-left: 79px;
+    padding-top: 17px;
+    padding-right: 59px;
+    padding-left: 78px;
   }
 }
 
@@ -181,12 +182,12 @@
 
 @media (min-width: $desktop-width) {
   .promo__inner-description {
-    margin-bottom: 55px;
+    margin-bottom: 54px;
   }
 }
 
 .promo__form-link {
-  padding: 16px 20px;
+  padding: 13px 20px;
 }
 
 @media (min-width: $tablet-width) {

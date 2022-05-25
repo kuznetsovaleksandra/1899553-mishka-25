@@ -15,8 +15,8 @@
 @media (min-width: $desktop-width) {
   .about-us {
     padding: 0;
-    padding-top: 68px;
-    padding-bottom: 98px;
+    padding-top: 40px;
+    padding-bottom: 58px;
   }
 }
 
@@ -28,8 +28,8 @@
 
 @media (min-width: $desktop-width) {
   .about-us__wrapper {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 38px;
+    padding-right: 44px;
   }
 }
 
@@ -79,6 +79,13 @@
     row-gap: 55px;
     font-size: 20px;
     line-height: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us__list {
+    column-gap: 75px;
+    row-gap: 58px;
   }
 }
 

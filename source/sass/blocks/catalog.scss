@@ -80,7 +80,7 @@
 
 @media (min-width: 1150px) {
   .catalog__title {
-    padding: 157px 225px 355px 225px;
+    padding: 95px 150px 355px 150px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -351,6 +351,8 @@
     display: inline-block;
     text-align: center;
     max-width: 100px;
+    padding-top: 5px;
+    padding-right: 12px;
   }
 
   .catalog__card-description {
@@ -390,8 +392,14 @@
     display: grid;
     grid-template-columns: 0.3fr 1.2fr 2fr;
     padding-top: 129px;
-    padding-bottom: 87px;
+    padding-bottom: 97px;
     column-gap: 50px;
+  }
+
+  .catalog__card-best-inner {
+    padding: 0;
+    padding-top: 8px;
+    margin: 0;
   }
 
   .catalog__card-title {

@@ -10,14 +10,14 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  background-image: url("/source/img/zigzag-line-mob.svg");
+  background-image: url("../img/zigzag-line-mob.svg");
 }
 
 @media (min-width: $tablet-width) {
   .reviews::after {
     content: "";
     height: 17px;
-    background-image: url("/source/img/zigzag-line-tab.svg");
+    background-image: url("../img/zigzag-line-tab.svg");
   }
 }
 
@@ -28,13 +28,13 @@
     width: 1050px;
     left: 50px;
     bottom: 0;
-    background-image: url("/source/img/zigzag-line-desk.svg");
+    background-image: url("../img/zigzag-line-desk.svg");
   }
 }
 
 .reviews-inner {
   max-width: 1050px;
-  background-image: url("/source/img/review.jpg");
+  background-image: url("../img/review.jpg");
   position: relative;
   background-repeat: no-repeat;
 }
@@ -44,6 +44,13 @@
     background-image: none;
   }
 }
+
+// @media (min-width: $tablet-width) {
+//   .reviews__inner {
+//     background-image: url("../img/review.jpg");
+//     background-size: 350px;
+//   }
+// }
 
 @media (min-width: $desktop-width) {
   .reviews-inner {
@@ -58,11 +65,6 @@
   flex-direction: column;
 }
 
-@media (min-width: $desktop-width) {
-  .reviews__wrapper {
-    padding: 78px 0 174px 163px;
-  }
-}
 
 @media (min-width: $tablet-width) {
   .reviews__wrapper {
@@ -70,7 +72,14 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 83px 50px 105px 50px;
+    position: relative;
+    padding: 83px 50px 108px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__wrapper {
+    padding: 78px 0 156px 174px;
   }
 }
 
@@ -118,7 +127,7 @@
 
 @media (min-width: $desktop-width) {
   .reviews__item {
-    margin-top: 35px;
+    margin-top: 20px;
   }
 }
 
@@ -131,18 +140,12 @@
 }
 
 .reviews__text {
-  margin: 0 0 33px 0;
+  margin-bottom: 33px;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
   align-items: center;
   color: rgba(68, 68, 68, 1);
-}
-
-@media (min-width: $desktop-width) {
-  .reviews__text {
-    margin-bottom: 46px;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -151,6 +154,13 @@
     margin-bottom: 61px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .reviews__text {
+    margin-bottom: 46px;
+  }
+}
+
 
 .reviews__author-contacts {
   font-weight: 400;
@@ -200,7 +210,7 @@
 
 .reviews__button {
   padding: 16px 65px 16px 65px;
-  max-width: 260px;
+  width: 260px;
   margin: 0 auto;
 }
 
