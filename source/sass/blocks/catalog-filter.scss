@@ -303,7 +303,7 @@
   }
 
   .catalog-filter__wrapper--radio .catalog-filter__item:not(:last-child) {
-    margin-bottom: 24px;
+    margin-bottom: 27px;
   }
 
   .catalog-filter__wrapper--radio .catalog-filter__list {
@@ -422,7 +422,7 @@
     flex-grow: 1;
     padding-left: 18px;
     padding-top: 13px;
-    padding-bottom: 13px;
+    padding-bottom: 17px;
     margin-left: 24px;
     font-size: 19px;
     line-height: 18px;
@@ -440,7 +440,7 @@
     flex-grow: 1;
     font-size: 19px;
     line-height: 18px;
-    padding: 11px 200px 15px 17px;
+    padding: 15px 200px 15px 18px;
   }
 
   .catalog-filter__phone-number-input:hover,
@@ -525,12 +525,12 @@
 
 @media (min-width: $desktop-width) {
   .catalog-filter__divider {
-    margin-left: 62px;
-    margin-top: 17px;
+    margin-left: 59px;
+    margin-top: 19px;
   }
 
   .catalog-filter__list {
-    margin-left: 77px;
+    margin-left: 81px;
   }
 
   .catalog-filter__wrapper--radio .catalog-filter__fieldset {
@@ -558,7 +558,7 @@
 
   .catalog-filter__name,
   .catalog-filter__message-text-wrapper {
-    margin-left: 73px;
+    margin-left: 78px;
   }
 
   .catalog-filter__phone-number {
@@ -571,7 +571,7 @@
 
   .catalog-filter__inner {
     padding-left: 0;
-    padding-right: 0;
+    padding-right: 16px;
     padding-bottom: 50px;
   }
 
@@ -582,7 +582,7 @@
 
   .catalog-filter__phone-icon {
     right: 10px;
-    top: 15px;
+    top: 9px;
   }
 
   .catalog-filter__email-text-icon {
