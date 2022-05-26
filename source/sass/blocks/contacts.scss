@@ -15,7 +15,7 @@
     width: 47px;
     height: 81px;
     position: absolute;
-    top: 46px;
+    top: 37px;
     right: 50px;
     background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDciIGhlaWdodD0iODEiIHZpZXdCb3g9IjAgMCA0NyA4MSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTcuNzY2MTEgMy44NjE4M1Y0Mi4zODEyTDQ3IDIzLjA3Mkw3Ljc2NjExIDMuODYxODNaTTAgODAuOTAwNVYwSDMuODMyNjFWODAuOTAwNUgwWiIgZmlsbD0iIzYzRDFCQiIvPgo8cGF0aCBkPSJNMy44MzI2MiAwLjA5OTYwOTRIMFY4MS4wMDAxSDMuODMyNjJWMC4wOTk2MDk0WiIgZmlsbD0iIzIzMUYyMCIvPgo8L3N2Zz4K");
   }
@@ -52,10 +52,10 @@
   .contacts__wrapper {
     font-size: 17px;
     line-height: 30px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 68px;
-    padding-bottom: 49px;
+    padding-left: 54px;
+    padding-right: 54px;
+    padding-top: 59px;
+    padding-bottom: 50px;
   }
 }
 
@@ -230,6 +230,12 @@
   .contacts__map {
     margin-bottom: 55px;
   }
+
+  @media (min-resolution: 2dppx) {
+    .reviews__inner {
+      background-image: url("../img/reviewx2.jpg");
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -270,8 +276,8 @@
   .contacts__pin {
     position: absolute;
     z-index: 1;
-    left: 51%;
-    top: 43%;
+    left: 52%;
+    top: 41%;
     transform: translate(-50%, -50%);
   }
 }

@@ -163,7 +163,7 @@
 
 .prodact-list__item-description {
   padding: 27px;
-  padding-top: 28px;
+  padding-top: 26px;
   padding-bottom: 26px;
   box-sizing: border-box;
   border: 1px solid #ededed;
@@ -266,8 +266,17 @@
   }
 }
 
+.prodact-list__basket {
+  border: 0;
+  background-color: transparent;
+}
+
+.prodact-list__basket-icon {
+  fill: rgba(0, 0, 0, 1);
+}
+
 .prodact-list__basket-icon:hover {
-  fill: rgba(99, 209, 187, 1);
+  fill: #62d0ba;
 }
 
 .prodact-list__basket-icon:active {

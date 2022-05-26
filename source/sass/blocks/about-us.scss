@@ -5,10 +5,10 @@
 
 @media (min-width: $tablet-width) {
   .about-us {
-    padding: 50px;
+    padding: 25px;
     min-width: 768px;
-    padding-top: 59px;
-    padding-bottom: 90px;
+    padding-top: 27px;
+    padding-bottom: 52px;
   }
 }
 
@@ -75,8 +75,8 @@
   .about-us__list {
     grid-template-columns: minmax(260px, 265px) minmax(320px, 325px);
     grid-template-rows: auto;
-    column-gap: 70px;
-    row-gap: 55px;
+    column-gap: 66px;
+    row-gap: 61px;
     font-size: 20px;
     line-height: 22px;
   }
