@@ -6,20 +6,21 @@
   flex-grow: 1;
   min-height: 52px;
   padding: 0;
+  cursor: pointer;
 }
 
-@media (min-width: $tablet-width) {
-  .pagination__toggle {
-    border: none;
-    min-width: 85px;
-    height: 30px;
-  }
+.pagination__arrow:hover {
+  fill: rgba(0, 0, 0, 0.6);
 }
 
 .pagination__arrow:active {
   fill: rgba(0, 0, 0, 0.3);
 }
 
-.pagination__arrow:hover {
-  fill: rgba(0, 0, 0, 0.6);
+@media (min-width: $tablet-width) {
+  .pagination__toggle {
+    border: none;
+    min-width: 87px;
+    height: 30px;
+  }
 }
