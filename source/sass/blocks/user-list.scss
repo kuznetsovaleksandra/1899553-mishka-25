@@ -9,7 +9,7 @@
 }
 
 .user-list__item:active {
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 .user-list__search-icon,
@@ -88,7 +88,7 @@
   }
 
   .user-list__item:last-child .user-list__link {
-    padding: 32px 50px 31.5px 80px;
+    padding: 32px 63px 31px 80px;
   }
 
   .user-list__basket-icon {
@@ -103,10 +103,15 @@
 
 @media (min-width: $desktop-width) {
   .user-list__link {
-    padding-left: 33px;
+    display: block;
+    cursor: pointer;
+    padding: 36px 33px 34px 33px;
+    min-width: 18px;
+    min-height: 18px;
+    border-left: solid 1px rgb(0, 0, 0, 0.1);
   }
 
   .user-list__item:last-child .user-list__link {
-    padding-left: 99px;
+    padding: 32px 65px 31px 80px;
   }
 }
